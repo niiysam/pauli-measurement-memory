@@ -5,7 +5,7 @@ Code and data for **Entanglement barriers and purification in frozen and slowly 
 Hancheng Zhou — Polessky State University; Guangdong University of Education.
 Correspondence: samvniiy@icloud.com.
 
-Version 1.0.0. DOI: **10.5281/zenodo.23700827** (reserved; registration occurs when the Zenodo record is published).
+Version 1.0.0. DOI: **10.5281/zenodo.23700827** (published archive).
 Repository: https://github.com/niiysam/pauli-measurement-memory
 
 ## Contents
