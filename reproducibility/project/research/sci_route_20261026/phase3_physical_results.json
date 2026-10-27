@@ -1,0 +1,193 @@
+{
+  "status": "ORIGINAL_GEOMETRIC_COUNTEREXAMPLE_CONFIRMED",
+  "plan": {
+    "date": "2026-10-26",
+    "relation": "Single original-geometric realization selected by phase3_frozen.json; no second graph or target",
+    "selected_n": 6,
+    "selected_edge_code": 207,
+    "selected_omega": [
+      6,
+      13,
+      3,
+      50,
+      8,
+      8
+    ],
+    "obstruction": "Induced claw centered at block vertex3 with leaves1,4,5; three disjoint bilinear pairs cannot all intersect the two endpoints of a central bilinear",
+    "L": 10,
+    "labels_hand_derived_before_verification": [
+      "XXX",
+      "XXX",
+      "XXY",
+      "XXY",
+      "XXX",
+      "XXY",
+      "XXX",
+      "XXX",
+      "XXY",
+      "XYX"
+    ],
+    "construction": "All first letters X, third letters X/Y fixed by distance-two edge; cyclic middle constraint [s_j!=X] XOR [t_j!=s_(j+1)]=adjacent_edge. These hand-derived labels predict the lexicographically first feasible middle sequence: all X except s9=Y. Independently implement transfer DP to check, not choose according to quantum output.",
+    "block_anchors": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "guards": [
+      0,
+      1,
+      8,
+      9
+    ],
+    "guard_edges": [
+      [
+        0,
+        8
+      ],
+      [
+        0,
+        9
+      ]
+    ],
+    "predicted": {
+      "s": 10,
+      "a": 3,
+      "rstar": 6,
+      "Smin": 4,
+      "k_static": 3,
+      "gap": 1
+    },
+    "maximum_rank_witness": [
+      1,
+      2,
+      6,
+      7,
+      8,
+      9
+    ],
+    "independence_proof": "All words have only X/Y, so X components are the binary circulant 1+x+x^2. It has no kernel on a periodic L10 chain since the recurrence has period3 and gcd(10,3)=1; the only constant solution also vanishes in characteristic2. Thus all ten generators independent.",
+    "checks": [
+      "separately constructed three-state cyclic transfer DP",
+      "exact physical Pauli commutation/rank",
+      "physical unsigned-group closure against stored formal Rstar, including all successors",
+      "existing signed engine and independent Stim Bell-reference entropy for all64 six-event outcome branches"
+    ],
+    "cap": {
+      "seconds": 120,
+      "reachable_states": 20000,
+      "outcome_branches": 128,
+      "production": 0,
+      "QPU": 0
+    },
+    "stop": "Any mismatch is a failed verification; do not change the graph, words or predicted values. On agreement, stop this experiment and adjudicate novelty."
+  },
+  "L": 10,
+  "labels": [
+    "XXX",
+    "XXX",
+    "XXY",
+    "XXY",
+    "XXX",
+    "XXY",
+    "XXX",
+    "XXX",
+    "XXY",
+    "XYX"
+  ],
+  "omega": [
+    768,
+    0,
+    24,
+    52,
+    12,
+    200,
+    32,
+    32,
+    1,
+    1
+  ],
+  "block_rank": 6,
+  "s": 10,
+  "a": 3,
+  "kernel": 0,
+  "k_static": 3,
+  "rstar": 6,
+  "Smin": 4,
+  "gap": 1,
+  "reachable_states": 456,
+  "witness": [
+    1,
+    2,
+    6,
+    7,
+    8,
+    9
+  ],
+  "signed_stim": {
+    "branch_inputs": 64,
+    "checked_events": 384,
+    "final_entropies": [
+      4
+    ]
+  },
+  "elapsed_seconds": 0.0874205419968348,
+  "protected_before": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664",
+    "research/sci_route_20261026/phase2_exact.py": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7",
+    "research/sci_route_20261026/phase2_results.json": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+    "research/sci_route_20261026/phase2_frozen.json": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf",
+    "research/sci_route_20261026/phase2_counterexample.py": "28d628be57ef6bdc2b0816a01f3f262ab91369ad0aa901836a36e34f2759d375",
+    "research/sci_route_20261026/phase2_counterexample_frozen.json": "80ca0b3f716ac5ed317606b89a2a47b1ef6de191ef98dd5bd72efb65af63129c",
+    "research/sci_route_20261026/phase2_counterexample_results.json": "0a36e283c0d632a790793093fbd882c4875410010d20c6fb78ad62d24e3f8e57",
+    "research/sci_route_20261026/phase3_frozen.json": "89b37ce9652d19eb573ba594a4c4ace33c673af585f8025648d5de27bd65f5ec",
+    "research/sci_route_20261026/phase3_graphs.py": "6409328705d3950825c24451b0c0e6536204753f381bb2565c8e1dfbf16d59f7",
+    "research/sci_route_20261026/phase3_graph_results.json": "cac6bf53fb40d523f1d5e73b1a0040840136187b4abf7f935790bfacb1617282"
+  },
+  "protected_after": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664",
+    "research/sci_route_20261026/phase2_exact.py": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7",
+    "research/sci_route_20261026/phase2_results.json": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+    "research/sci_route_20261026/phase2_frozen.json": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf",
+    "research/sci_route_20261026/phase2_counterexample.py": "28d628be57ef6bdc2b0816a01f3f262ab91369ad0aa901836a36e34f2759d375",
+    "research/sci_route_20261026/phase2_counterexample_frozen.json": "80ca0b3f716ac5ed317606b89a2a47b1ef6de191ef98dd5bd72efb65af63129c",
+    "research/sci_route_20261026/phase2_counterexample_results.json": "0a36e283c0d632a790793093fbd882c4875410010d20c6fb78ad62d24e3f8e57",
+    "research/sci_route_20261026/phase3_frozen.json": "89b37ce9652d19eb573ba594a4c4ace33c673af585f8025648d5de27bd65f5ec",
+    "research/sci_route_20261026/phase3_graphs.py": "6409328705d3950825c24451b0c0e6536204753f381bb2565c8e1dfbf16d59f7",
+    "research/sci_route_20261026/phase3_graph_results.json": "cac6bf53fb40d523f1d5e73b1a0040840136187b4abf7f935790bfacb1617282"
+  },
+  "production_trajectories": 0,
+  "QPU_jobs": 0
+}

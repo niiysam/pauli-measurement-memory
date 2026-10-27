@@ -1,0 +1,18 @@
+{
+  "round": 2,
+  "date": "2026-10-26",
+  "claim_under_test": "For every connected bandwidth-two alternating generator graph, delta=n-rank(Omega)/2-Rstar<=1",
+  "status_before": "UNPROVED working conjecture; no novelty claim",
+  "stage_A": "All connected labeled bandwidth-two graphs of n=1..6 in increasing n and increasing edge-bit code; reuse prior reachable() implementation and exact group definitions",
+  "stage_A_stop": "Stop primary search at first exact counterexample, preserving all preceding cases and the counterexample",
+  "stage_B_if_no_counterexample": "Only two preselected graphs: three and four triangles joined successively at articulation vertices, n=7,9. No additional families or sizes",
+  "positive_controls": "Bipartite graphs have Rstar=n-a by measuring all of one part then all of the other; compare witnesses exactly",
+  "negative_control": "K5 is outside bandwidth-two family and has Rstar=1,a=2,delta=2. This disproves any unrestricted connected-graph version",
+  "independent_counterexample_check": "If a primary counterexample occurs, realize the same alternating form with independent canonical Pauli generators, and exhaust all reachable spaces using the physical symplectic implementation; do not claim the canonical embedding is the original geometric model",
+  "maximum_qubits_for_algebraic_embedding": 14,
+  "maximum_states_per_graph": 20000,
+  "wall_time_cap_seconds": 120,
+  "statistics": "Exact deterministic enumeration only; no fitted parameters, p-values, production trajectories or QPU",
+  "report_standard": "If no counterexample, say verified only in this finite set, not proved generally; do not require a PRL-level result but do not disguise known graph algebra as original physics",
+  "preserve": "Prior results, frozen plans, old code and all historical data remain read-only"
+}

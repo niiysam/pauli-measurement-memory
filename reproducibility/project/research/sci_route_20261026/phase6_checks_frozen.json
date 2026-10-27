@@ -1,0 +1,16 @@
+{
+  "round": 6,
+  "date": "2026-10-26",
+  "purpose": "Fix exact fixtures before executing the new claim-specific checks; no simulation scan",
+  "occupancy_fixtures": [
+    {"L":64,"m":1,"t":0,"c":"3/5","rho":"5/81"},
+    {"L":64,"m":2,"t":1,"c":"3/5","rho":"5/81"},
+    {"L":64,"m":3,"t":3,"c":"3/5","rho":"5/81"},
+    {"L":64,"m":3,"t":3,"c":"1","rho":"5/81"}
+  ],
+  "expected": "Enumerated probability that all candidate cuts fail equals inclusion-exclusion sum_k (-1)^k choose(m,k) rho^k (1-4k(1-c^3)/L)^t and is at most the marginal product (1-rho(1-4(1-c^3)/L)^t)^m. Nontrivial refresh fixtures strictly violate independence, with negative two-cut covariance.",
+  "cluster_generators": {"lengths":[3,4,6],"words":["ZXZ","XYX"],"expected_rank":"L","expected_anticommutation":"all zero"},
+  "specific_projection_check": "L6 ZXZ, witness anchors0..5. Reuse existing selected_branches and independent Stim Bell-reference machinery over all64 outcome strings, not a stochastic sample. After k events entropy6-k; final0. No old generic simulator test rerun.",
+  "comparison_fixtures": "q=.13, K=1/10, symbolic sequence b_L=L^-2, s_L=K L^2, t_L=K L^3; compare asymptotic surviving-cut bound to trivial half-chain bound and global-no-refresh probability analytically. A separate q=.13,c=.6,s8192 check is only a bound-vacuity calculation, not new dynamics/data.",
+  "limits": "At most120 seconds, system L<=6 plus Bell reference; occupancy L64 is a probability denominator only, no L64 quantum evolution; no MC/production/hardware. Preserve all results and failures."
+}

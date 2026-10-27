@@ -1,0 +1,200 @@
+{
+  "status": "COUNTEREXAMPLE_CONFIRMED",
+  "plan": {
+    "date": "2026-10-26",
+    "relation_to_initial_plan": "Initial bounded search completed without counterexample. A new analytic construction using sublattice imbalance motivates ONE additional fixed counterexample, not a scan or changed decision threshold",
+    "construction": "Three disjoint K3 cliques on vertices 0..2,3..5,6..8 joined by edges (2,3),(5,6)",
+    "before_computation_prediction": {
+      "n": 9,
+      "a": 4,
+      "Rstar": 3,
+      "delta": 2
+    },
+    "proof_basis": "Line graph of a bipartite tree with A=3 and B=7 Majoranas. Every measurement-only partial matching joins A to B, so at most three independent matching stabilizers; three mutually commuting edges attain the bound",
+    "original_geometry_check": "One fixed periodic L13 ensemble with all words XXX except anchors 0=ZXX, 3=XZX, 4=YXX, 5=XZX, 7=YXX, 8=XZX, 10=YXX; active nine-node block is anchors 2..10",
+    "original_geometry_prediction": {
+      "L": 13,
+      "s": 13,
+      "a": 5,
+      "Rstar": 6,
+      "Smin": 7,
+      "k_static": 5,
+      "gap": 2
+    },
+    "independent_checks": [
+      "formal GF2 group enumeration",
+      "Majorana partial-matching enumeration",
+      "existing physical Pauli symplectic enumeration for fixed L13",
+      "targeted signed-engine/Stim reference-entropy check on the maximum-rank witness"
+    ],
+    "stop_rule": "One example only, stop on mismatch or after confirmation; no further graph orders or quantum production",
+    "maximum_reachable_states": 20000,
+    "wall_time_seconds": 120,
+    "hardware": false,
+    "random_trajectories": 0,
+    "originality": "Not claimed: Majorana matching and dark-subspace mechanisms have prior literature"
+  },
+  "formal": {
+    "n": 9,
+    "omega": [
+      6,
+      5,
+      11,
+      52,
+      40,
+      88,
+      416,
+      320,
+      192
+    ],
+    "a": 4,
+    "rstar": 3,
+    "delta": 2,
+    "states": 187,
+    "word": [
+      0,
+      3,
+      6
+    ],
+    "connected": true
+  },
+  "majorana_matching": {
+    "max_pairs": 3,
+    "states": 187,
+    "word": [
+      0,
+      3,
+      6
+    ]
+  },
+  "root_edges": [
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ]
+  ],
+  "majorana_pauli": {
+    "qubits": 5,
+    "s": 9,
+    "rstar": 3,
+    "reachable_states": 187
+  },
+  "original_geometry": {
+    "L": 13,
+    "labels": [
+      "ZXX",
+      "XXX",
+      "XXX",
+      "XZX",
+      "YXX",
+      "XZX",
+      "XXX",
+      "YXX",
+      "XZX",
+      "XXX",
+      "YXX",
+      "XXX",
+      "XXX"
+    ],
+    "s": 13,
+    "a": 5,
+    "kernel": 0,
+    "k_static": 5,
+    "rstar": 6,
+    "Smin": 7,
+    "gap": 2,
+    "states": 2244,
+    "word": [
+      1,
+      2,
+      5,
+      8,
+      11,
+      12
+    ]
+  },
+  "signed_stim": {
+    "branch_inputs": 64,
+    "checked_events": 384,
+    "final_entropies": [
+      7
+    ]
+  },
+  "elapsed_seconds": 0.2737595840007998,
+  "protected_before": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664",
+    "research/sci_route_20261026/phase2_exact.py": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7",
+    "research/sci_route_20261026/phase2_results.json": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+    "research/sci_route_20261026/phase2_frozen.json": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf"
+  },
+  "protected_after": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664",
+    "research/sci_route_20261026/phase2_exact.py": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7",
+    "research/sci_route_20261026/phase2_results.json": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+    "research/sci_route_20261026/phase2_frozen.json": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf"
+  },
+  "production_trajectories": 0,
+  "QPU_jobs": 0
+}

@@ -1,0 +1,12 @@
+{
+  "round":5,
+  "date":"2026-10-26",
+  "authorization":"User explicitly continued the manual theorem review; keep timer paused, no production or hardware",
+  "claim_under_review":"MASTER17 all-time product-input area law, extensive mixed-state entropy deficit, and holomorphic residual entropy density for the original frozen c=1 ensemble",
+  "primary_tasks":["Attack branch-projector regrouping and distinguish it from an actual reordered adaptive experiment", "Verify periodic two-boundary enclosures for all even L>=32 without simulation", "Audit geometric-event dependence, disorder versus outcome averaging, and order of limits", "Audit finite-window homogeneity, positive increments and complex convergence", "Check nearest published general theorems before claiming any model-specific novelty"],
+  "literature_budget":"At most three newly inspected full primary sources for equivalent bounds; old Ippoliti/Placke texts may be reused. Log searched leads separately from full-text evidence. Prioritize actual theorem statements and assumptions, not abstract absence.",
+  "numerical_budget":"No quantum-state runs, new graph enumeration, parameter scan, production trajectories or repeated general tests. Pure algebra/geometry audit only if needed.",
+  "decision":"Produce a bounded coverage verdict and a concrete referee-ready technical proof statement, not a manuscript. Distinguish a known proof tool from a directly covered physical result. No first-ever claim, no novelty inference from missing hits.",
+  "stop":"After this review and technical proof package. Do not postpone the same novelty decision by another unspecific search round. If no exact predecessor is established, label scope-limited novelty and judge the scientific increment; any remaining external independent review is explicitly pending.",
+  "preserve":"All old reports/data/frozen code and failures read-only; snapshot round4 active MASTER/progress before editing active handoff. No automations change, no IBM/account/backend access, no subagents, no manuscript or submission."
+}

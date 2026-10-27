@@ -1,0 +1,23 @@
+{
+  "status": "PASS_INDEPENDENT_ALL23_AXES_GROUPS_BLOCKS_AND_INTERVALS",
+  "raw_shots": 27648,
+  "primary_exact_fraction": "401/4096",
+  "verdict": "UNRESOLVED",
+  "groups_exact": {
+    "BELL0": "473/512",
+    "IDLE_T": "325/2048",
+    "ECHO_T": "1309/2048",
+    "P5_T": "451/1024",
+    "SEP0": "253/1024"
+  },
+  "contrasts_exact": {
+    "primary_D": "401/4096",
+    "waiting_loss_BELL0_minus_IDLE": "1567/2048",
+    "ECHO_minus_IDLE": "123/256",
+    "P5_minus_ECHO": "-407/2048"
+  },
+  "independent_bit_position_rule": "raw[3-q] for final logical position q; no original mask helper",
+  "comparison_roundoff_absolute_tolerance": 4e-15,
+  "new_jobs": 0,
+  "new_simulations": 0
+}

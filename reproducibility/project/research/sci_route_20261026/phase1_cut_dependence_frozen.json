@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-26",
+  "reason": "New finite-block proof requires a negative control against treating neighboring cuts as independent",
+  "prediction": "P(C_j and C_(j+1))=u3^3+(u2-u3)^3; for uniform pi it is 1/81, different from (5/81)^2",
+  "method": "Enumerate all 3^9 relevant label assignments with five directly constructed Pauli words; exact integer polynomial identity",
+  "quantum_embedding_L": 9,
+  "random_samples": 0,
+  "parameter_fitting": false,
+  "old_files_may_change": false,
+  "stop_on_mismatch": true
+}

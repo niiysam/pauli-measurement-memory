@@ -1,0 +1,467 @@
+{
+  "theory_files": [
+    {
+      "source": "src/gate_b.py",
+      "copy": "reproducibility/project/src/gate_b.py",
+      "sha256": "fff20b68e02925fce955a5e718c390b3efc4089fd9458ae24b628fadfd9b4603"
+    },
+    {
+      "source": "src/critical_controls.py",
+      "copy": "reproducibility/project/src/critical_controls.py",
+      "sha256": "c7a940a76af2cc63c8857d42fc4dd3d2ff0d9f3fcc5b4152fcefe4b313166c12"
+    },
+    {
+      "source": "src/audit_validation.py",
+      "copy": "reproducibility/project/src/audit_validation.py",
+      "sha256": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec"
+    },
+    {
+      "source": "src/gate_c_analysis.py",
+      "copy": "reproducibility/project/src/gate_c_analysis.py",
+      "sha256": "e67fd53622db6302fbe8cc6f35905dbc0c347c58c16655f66e53549e0db610dd"
+    },
+    {
+      "source": "src/gate_c.py",
+      "copy": "reproducibility/project/src/gate_c.py",
+      "sha256": "cc67842a0f917623005f3d88ddc42e8b0b7c88d0d82f60a8b35263faae933bfd"
+    },
+    {
+      "source": "src/reproduce.py",
+      "copy": "reproducibility/project/src/reproduce.py",
+      "sha256": "974efd05011c82e84f7fb7c6544e5e4dc5c48cdaf7006f4eb0c263f7754c3b85"
+    },
+    {
+      "source": "src/__init__.py",
+      "copy": "reproducibility/project/src/__init__.py",
+      "sha256": "18e199bc3a9800adf0f16d60c38cf5bd03ddc14073d6773ec417fd201a800ec8"
+    },
+    {
+      "source": "src/gate_c2.py",
+      "copy": "reproducibility/project/src/gate_c2.py",
+      "sha256": "286b708be9bd86a1607662a305e5b8a3b3457446ce9e1b0475c9ddcd66d991a3"
+    },
+    {
+      "source": "src/criticality96.py",
+      "copy": "reproducibility/project/src/criticality96.py",
+      "sha256": "e71d66dd63de158a62bdc942cbaf8c033630bcdd9d25f41b2e8d14f81ea0347f"
+    },
+    {
+      "source": "src/baseline_validation.py",
+      "copy": "reproducibility/project/src/baseline_validation.py",
+      "sha256": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65"
+    },
+    {
+      "source": "src/gate_c2_analysis.py",
+      "copy": "reproducibility/project/src/gate_c2_analysis.py",
+      "sha256": "ce30c2e6326bdeede4c29b502f1f47094e2599807839d4c6c986578dc1805978"
+    },
+    {
+      "source": "src/gate_b_analysis.py",
+      "copy": "reproducibility/project/src/gate_b_analysis.py",
+      "sha256": "0f0a53f621b762d103dd9bff6d5a7ceeb7312b2d7cc73c0a583255c15586e84e"
+    },
+    {
+      "source": "src/mechanism.py",
+      "copy": "reproducibility/project/src/mechanism.py",
+      "sha256": "55c8b25d655e5cd1af08db1f6d7c2df154e908a26b360f4243f97ad48e48d082"
+    },
+    {
+      "source": "src/gate_e_audit.py",
+      "copy": "reproducibility/project/src/gate_e_audit.py",
+      "sha256": "fa2d762aad2260881bdf55ffa04177a744ca5ad801abbda501be626fc10b1c48"
+    },
+    {
+      "source": "src/ensemble.py",
+      "copy": "reproducibility/project/src/ensemble.py",
+      "sha256": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472"
+    },
+    {
+      "source": "src/reference.py",
+      "copy": "reproducibility/project/src/reference.py",
+      "sha256": "c8110eb5bf08f5c31f5638a5c96974576524889c0a197e1a5e4a32eb6e652ddc"
+    },
+    {
+      "source": "src/gate_d_analysis.py",
+      "copy": "reproducibility/project/src/gate_d_analysis.py",
+      "sha256": "d155aede96760f8e84b50623d99dee2db43a97d730c5d1fe23748f76cb2276e1"
+    },
+    {
+      "source": "src/gate_d.py",
+      "copy": "reproducibility/project/src/gate_d.py",
+      "sha256": "3062929f36015883acd9d31bb0c7a6070331e739bce30bbe96535280cf283aa6"
+    },
+    {
+      "source": "src/gate_e_run.py",
+      "copy": "reproducibility/project/src/gate_e_run.py",
+      "sha256": "dd7b2ce93e25e890d22ed30f1aed6895c93594765ebda7ee6ff1f1ed6e0a494f"
+    },
+    {
+      "source": "src/history_controls.py",
+      "copy": "reproducibility/project/src/history_controls.py",
+      "sha256": "6d42994f8a3c58dcd77539fd77684fc52ad16778c183987e01240a592678fc3e"
+    },
+    {
+      "source": "src/analyze.py",
+      "copy": "reproducibility/project/src/analyze.py",
+      "sha256": "917fa117159886b4a63a370c44022b9036dce1b8ac0d818e56f76a251cccca68"
+    },
+    {
+      "source": "src/stabilizer.py",
+      "copy": "reproducibility/project/src/stabilizer.py",
+      "sha256": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251"
+    },
+    {
+      "source": "research/sci_route_20261026/phase4_validation.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase4_validation.py",
+      "sha256": "44b74817a6f8d4b200b8f3005edb77172ebc9d16fbc7da61a41802835405b168"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_graphs.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_graphs.py",
+      "sha256": "6409328705d3950825c24451b0c0e6536204753f381bb2565c8e1dfbf16d59f7"
+    },
+    {
+      "source": "research/sci_route_20261026/phase5_arithmetic.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase5_arithmetic.py",
+      "sha256": "79d8fd423880c2d06f809fbd8327499f49b57390bbc55b447fa28340a0398113"
+    },
+    {
+      "source": "research/sci_route_20261026/phase1_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase1_results.json",
+      "sha256": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51"
+    },
+    {
+      "source": "research/sci_route_20261026/phase2_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase2_frozen.json",
+      "sha256": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf"
+    },
+    {
+      "source": "research/sci_route_20261026/phase4_validation_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase4_validation_frozen.json",
+      "sha256": "a815a680d011cef92083dcadda73c1e166d700fe0e35956e50b96510afd1c11f"
+    },
+    {
+      "source": "research/sci_route_20261026/phase6_check_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase6_check_results.json",
+      "sha256": "ba29383f83550106d098d99fccdd3fc30e880dc29460834055d86a8caf0907f6"
+    },
+    {
+      "source": "research/sci_route_20261026/phase4_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase4_frozen.json",
+      "sha256": "cdd02f5edff3fdcb82cb24ac4311ed801fb3ac1f9fe57ef66c7de9eccc27e1db"
+    },
+    {
+      "source": "research/sci_route_20261026/phase1_exact.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase1_exact.py",
+      "sha256": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_quotient_audit.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_quotient_audit.py",
+      "sha256": "6b497ab7d6af4a137abfac0d38ba33798c481d6853f08c16d1275473eea6db54"
+    },
+    {
+      "source": "research/sci_route_20261026/exact_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/exact_results.json",
+      "sha256": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc"
+    },
+    {
+      "source": "research/sci_route_20261026/phase1_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase1_frozen.json",
+      "sha256": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_physical_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_physical_frozen.json",
+      "sha256": "9e2339e3f29935bec3239c29c6019ef5bde3df6ec1ba898dfb5f3542409d1c01"
+    },
+    {
+      "source": "research/sci_route_20261026/phase6_checks.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase6_checks.py",
+      "sha256": "5417ffb05f54fec89e28e33410a0e5db209974843ea364aa8cb1c46d6a156cdc"
+    },
+    {
+      "source": "research/sci_route_20261026/phase4_validation_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase4_validation_results.json",
+      "sha256": "2d19d348fa87a514f83b9d2fd583b49bee5707a5a10e489d803a19c4d3c42a51"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_physical.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_physical.py",
+      "sha256": "cae3ca1b8d70a522610c6c1deb2c065b87c8097c4667775fdc7a58b5301a41e4"
+    },
+    {
+      "source": "research/sci_route_20261026/phase5_index_scope_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase5_index_scope_frozen.json",
+      "sha256": "0c8622c33e509562171ffbd2c909cafb1403fc161caf72e65fa1edda8b8d351a"
+    },
+    {
+      "source": "research/sci_route_20261026/phase5_arithmetic_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase5_arithmetic_results.json",
+      "sha256": "2beda2f279cb89dda8a48f93ddf87f89ca184637e3d64b94a3082eb21a86b928"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_graph_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_graph_results.json",
+      "sha256": "cac6bf53fb40d523f1d5e73b1a0040840136187b4abf7f935790bfacb1617282"
+    },
+    {
+      "source": "research/sci_route_20261026/phase1_cut_dependence_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase1_cut_dependence_frozen.json",
+      "sha256": "e18a96624034c13ea9f963acba599c36907da510d471a7f9b7a2a11dc9b04063"
+    },
+    {
+      "source": "research/sci_route_20261026/phase2_counterexample_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase2_counterexample_frozen.json",
+      "sha256": "80ca0b3f716ac5ed317606b89a2a47b1ef6de191ef98dd5bd72efb65af63129c"
+    },
+    {
+      "source": "research/sci_route_20261026/phase6_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase6_frozen.json",
+      "sha256": "03f1410b56e2912dec53a988ea090e20ce250718ab3b33cb7d1dd0bd514ec131"
+    },
+    {
+      "source": "research/sci_route_20261026/phase6_checks_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase6_checks_frozen.json",
+      "sha256": "1381c224d79020dad4231000fe7abe83d72092dc98ea46fa87def375dce8647f"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_frozen.json",
+      "sha256": "89b37ce9652d19eb573ba594a4c4ace33c673af585f8025648d5de27bd65f5ec"
+    },
+    {
+      "source": "research/sci_route_20261026/phase1_cut_dependence.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase1_cut_dependence.py",
+      "sha256": "b967a3b2152687729434af50b05e10d0dfad4ce04cae1d92adca05278d38fcc3"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_quotient_audit_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_quotient_audit_results.json",
+      "sha256": "a10be77babe6ea5e0ecd28104aaedc010c4dd1b1d671e1d93b7676b0423649f1"
+    },
+    {
+      "source": "research/sci_route_20261026/phase1_cut_dependence_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase1_cut_dependence_results.json",
+      "sha256": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664"
+    },
+    {
+      "source": "research/sci_route_20261026/exact_check.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/exact_check.py",
+      "sha256": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166"
+    },
+    {
+      "source": "research/sci_route_20261026/phase6_singular_limit_plan.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase6_singular_limit_plan.json",
+      "sha256": "6f69324095141b0df1aad187815e068746168923a6121d3aae5d07ae3295494c"
+    },
+    {
+      "source": "research/sci_route_20261026/phase2_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase2_results.json",
+      "sha256": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8"
+    },
+    {
+      "source": "research/sci_route_20261026/phase3_physical_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase3_physical_results.json",
+      "sha256": "bb40b756a1181ae04688b496263e329c80b0ca94e5eff03023ecd751b798c31f"
+    },
+    {
+      "source": "research/sci_route_20261026/phase2_counterexample_results.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase2_counterexample_results.json",
+      "sha256": "0a36e283c0d632a790793093fbd882c4875410010d20c6fb78ad62d24e3f8e57"
+    },
+    {
+      "source": "research/sci_route_20261026/phase2_counterexample.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase2_counterexample.py",
+      "sha256": "28d628be57ef6bdc2b0816a01f3f262ab91369ad0aa901836a36e34f2759d375"
+    },
+    {
+      "source": "research/sci_route_20261026/phase2_exact.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase2_exact.py",
+      "sha256": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7"
+    },
+    {
+      "source": "research/sci_route_20261026/phase5_frozen.json",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase5_frozen.json",
+      "sha256": "953e891a34d2e564c33f4b188d3baa22cd5c42a360107ac1f19b2d1d082cea4d"
+    }
+  ],
+  "hardware_files": [
+    {
+      "batch": "original8",
+      "block": 0,
+      "source": "research/ibm_proposal_20261026/kingston_sdkpath_fix_20261027/RAW_BLOCK0_SHOTS.json",
+      "source_sha256": "402eadb8ff61d57be1961c06dad4fd24025f7d0903a76cd33feb2ab009d6d35c",
+      "copy": "reproducibility/hardware_raw/original8_block_00.json",
+      "copy_sha256": "96ecd222bcdfeb7eeb5e94445214272ad81d90c148552eb277f41643ccf04082",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 1,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_01/RAW_SHOTS.json",
+      "source_sha256": "e92cba3970ecefdae48951bca8b99b0b9a19373439b667d09fe3ed8e6431427e",
+      "copy": "reproducibility/hardware_raw/original8_block_01.json",
+      "copy_sha256": "63966118953f31994ae6e9c4c3e775c5afeb3af3db598f9d5a3dbee1ec52f127",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 2,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_02/RAW_SHOTS.json",
+      "source_sha256": "f3b8cb761ddda91db5934f0bbdd019a796e313a619bbb5ec16b2052f9265eaee",
+      "copy": "reproducibility/hardware_raw/original8_block_02.json",
+      "copy_sha256": "aeb55a77c537145895b86cb6a0dc3e87ad690e241dc809684eddbe8cbc4540ba",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 3,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_03/RAW_SHOTS.json",
+      "source_sha256": "d7b713055943795119d637210210bcff563ea2cb4f56cc878b8ead46f4217f56",
+      "copy": "reproducibility/hardware_raw/original8_block_03.json",
+      "copy_sha256": "daab511a8cf8ad2992a0ca164dbe11df442f845f1612e4de3cefe6a9ea2f3340",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 4,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_04/RAW_SHOTS.json",
+      "source_sha256": "6b4bdf5b2b7f0e7d07e7e1bb5eb4fa457ef927943a21f990aac304c162aa3632",
+      "copy": "reproducibility/hardware_raw/original8_block_04.json",
+      "copy_sha256": "8075a167e841f7872977912f7b5ce244e0dae6e113c82227dad45ac5564a3df0",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 5,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_05/RAW_SHOTS.json",
+      "source_sha256": "cdec8695db99f5241bc0b96547daf20f3d2ffe95f3acdb7c4ec7c7432bad6976",
+      "copy": "reproducibility/hardware_raw/original8_block_05.json",
+      "copy_sha256": "1d34af834b8eac47dc64098b56f142a407215b2fb04ecfdfbd97cfacad3f26be",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 6,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_06/RAW_SHOTS.json",
+      "source_sha256": "e6556b9a9859169ac6dca1d367a6559e675339f706893c61d6bad162fa325a44",
+      "copy": "reproducibility/hardware_raw/original8_block_06.json",
+      "copy_sha256": "1c8705dcf040f01340553a8ee679c338fb4488d912910fd17b304e431f8296d8",
+      "shots": 9216
+    },
+    {
+      "batch": "original8",
+      "block": 7,
+      "source": "research/ibm_proposal_20261026/kingston_all8_results_20261027/block_07/RAW_SHOTS.json",
+      "source_sha256": "986e1a8964e8a27c11efe261a161d0af404d9e57b984cdb8d4c26092c8de8e41",
+      "copy": "reproducibility/hardware_raw/original8_block_07.json",
+      "copy_sha256": "2cf01e6a6632650101604200ed8d1ba72b639e145375d80cb9d7ec32433b98ad",
+      "shots": 9216
+    },
+    {
+      "batch": "diagnostic49",
+      "block": 0,
+      "source": "research/ibm_proposal_20261026/diagnostic49_results_20261027/block_00/RAW_SHOTS.json",
+      "source_sha256": "68a9cd609356a53997c6bfb670d331cad45c6bb45dde999628cc4e8b9ac08022",
+      "copy": "reproducibility/hardware_raw/diagnostic49_block_00.json",
+      "copy_sha256": "7d22de74c5239801679a61da38c04f72a38eb8fbd2a3109aeafc9810f66adc14",
+      "shots": 12544
+    },
+    {
+      "batch": "diagnostic49",
+      "block": 1,
+      "source": "research/ibm_proposal_20261026/diagnostic49_results_20261027/block_01/RAW_SHOTS.json",
+      "source_sha256": "22f7196da46457aa8f8a18e50b4a60e96e2f9d92abd827795abd98e4e9fa98bd",
+      "copy": "reproducibility/hardware_raw/diagnostic49_block_01.json",
+      "copy_sha256": "776e6d8b449df562c4e99f6c74a68605df3c57952da396efad89aeb910f7fdb0",
+      "shots": 12544
+    },
+    {
+      "batch": "diagnostic49",
+      "block": 2,
+      "source": "research/ibm_proposal_20261026/diagnostic49_results_20261027/block_02/RAW_SHOTS.json",
+      "source_sha256": "f055d80447f844bf4d920ff162002089020c162ab4060f1ea4542d8a96d6f1f8",
+      "copy": "reproducibility/hardware_raw/diagnostic49_block_02.json",
+      "copy_sha256": "8044b85ea9a9732c99dddbcf15a8a9144b5656bfe0e7067e8afe19355edbaeeb",
+      "shots": 12544
+    },
+    {
+      "batch": "diagnostic49",
+      "block": 3,
+      "source": "research/ibm_proposal_20261026/diagnostic49_results_20261027/block_03/RAW_SHOTS.json",
+      "source_sha256": "77c1721ebb2125b930433cce964ab352bafa0038c87381292b1e49ffe827a51e",
+      "copy": "reproducibility/hardware_raw/diagnostic49_block_03.json",
+      "copy_sha256": "a3b9ed211a0b84ed40c528f2d893363d0201448928f02ee3b5baeff13eaefd47",
+      "shots": 12544
+    },
+    {
+      "batch": "echo27",
+      "block": 0,
+      "source": "research/ibm_proposal_20261026/echo27_results_20261027/block_00/RAW_SHOTS.json",
+      "source_sha256": "bb63f18092154878e196c18423e2f079ad35e00126da4e8c198788aa05161cbf",
+      "copy": "reproducibility/hardware_raw/echo27_block_00.json",
+      "copy_sha256": "79d41ca55338a7ca8c7774fa065174115cf3bab4eae4f8ae3b28aa069e3b3fb3",
+      "shots": 6912
+    },
+    {
+      "batch": "echo27",
+      "block": 1,
+      "source": "research/ibm_proposal_20261026/echo27_results_20261027/block_01/RAW_SHOTS.json",
+      "source_sha256": "274fb117b8e116bd1650eaaf60dd8688e7db531aac087aa5da4930af3f6214c8",
+      "copy": "reproducibility/hardware_raw/echo27_block_01.json",
+      "copy_sha256": "29b941171c34f7524422048c19acdcb7db289496e33c8733cdb614700771e883",
+      "shots": 6912
+    },
+    {
+      "batch": "echo27",
+      "block": 2,
+      "source": "research/ibm_proposal_20261026/echo27_results_20261027/block_02/RAW_SHOTS.json",
+      "source_sha256": "0bdbb8c67c66e8e703decc1f133f4458f797b951819213794af16b01d310159b",
+      "copy": "reproducibility/hardware_raw/echo27_block_02.json",
+      "copy_sha256": "c2489c59ea65149c6ac5b53c6b5267265acdf9ac5e592e8dd4c03743195a4093",
+      "shots": 6912
+    },
+    {
+      "batch": "echo27",
+      "block": 3,
+      "source": "research/ibm_proposal_20261026/echo27_results_20261027/block_03/RAW_SHOTS.json",
+      "source_sha256": "d5ca7c596cf3ce261b89a7405966dccda99c262894ea27963b4b6313410baf98",
+      "copy": "reproducibility/hardware_raw/echo27_block_03.json",
+      "copy_sha256": "9492c47c6ecdf63edb3b897fb952638e4dffabb08aab1eb9e781ebd2ee9c29f0",
+      "shots": 6912
+    }
+  ],
+  "raw_total_shots": 151552,
+  "hardware_jobs": 16,
+  "no_credentials_or_live_submission_programs_included": true,
+  "copies_not_new_data": true,
+  "offline_circuit_source_closure": [
+    {
+      "source": "research/ibm_proposal_20261026/echo_control_20261027/prepare_echo.py",
+      "copy": "reproducibility/project/research/ibm_proposal_20261026/echo_control_20261027/prepare_echo.py",
+      "sha256": "05a30a03e5a9da71b606445a8250ec1dfd00b02d13b479dbea96461b1d4e7c00"
+    },
+    {
+      "source": "research/ibm_proposal_20261026/next_measurements_20261027/prepare_offline_v2.py",
+      "copy": "reproducibility/project/research/ibm_proposal_20261026/next_measurements_20261027/prepare_offline_v2.py",
+      "sha256": "90b09222d47a8f9e13a989efd880ec7f8b0b4ec4018f251c0459384faf4aab72"
+    },
+    {
+      "source": "research/ibm_proposal_20261026/build_validate.py",
+      "copy": "reproducibility/project/research/ibm_proposal_20261026/build_validate.py",
+      "sha256": "3ef9e09cc7fdfbac35c3ac963850bd1bf8f8e782102d9963fee75fa292ad80da"
+    },
+    {
+      "source": "research/sci_route_20261026/phase7_ibm_offline.py",
+      "copy": "reproducibility/project/research/sci_route_20261026/phase7_ibm_offline.py",
+      "sha256": "6c7ca40b406c96912fd5b756cdfab1fc87547cc95f04e298f4a13ba0d882c80e"
+    },
+    {
+      "source": "scripts/ibm_offline_parity.py",
+      "copy": "reproducibility/project/scripts/ibm_offline_parity.py",
+      "sha256": "49b94020cdc3b771e019ed8121d59e0838c112a441dd141b9cec1f5ea97bdc5d"
+    }
+  ],
+  "offline_source_note": "Copied for circuit provenance only. Historical target/export inputs are not all in this package; compiled QPY and timing manifests specify the executed circuits. No circuit regeneration or hardware operation performed."
+}

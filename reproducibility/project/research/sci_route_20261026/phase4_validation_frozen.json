@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-26",
+  "scope": "Targeted branch-projector regrouping and Schmidt-rank lemma only, not generic simulator validation or production",
+  "ensembles": ["L10 allXXX", "L10 phase3 frozen non-line-graph labels, unmodified"],
+  "histories": [1,2,6,7,8,9,3,0,4,5,2,5],
+  "outcome_branches": ["all+", "alternating+,- starting+"],
+  "initial_product_states": ["all0", "single-qubit theta_j=pi*(j+1)/(2L+3), phi_j=pi*j/7; cos(theta_j/2)|0>+exp(i phi_j)sin(theta_j/2)|1>"],
+  "predictions": ["Grouping every component that crosses the chosen physical half-chain cut before all left/right local components preserves the unnormalized branch vector and Born probability", "Final Schmidt rank cannot exceed cross-component-only Schmidt rank", "Entropy need not decrease for an individual local postselected outcome, so do not impose this incorrect assertion", "Commuting allXXX has deterministic half-chain entropy bound4 from product states"],
+  "implementation": "Reuse Pauli/local_word, existing component routine and reference.project/reference.entropy; represent operator action on length1024 vector by exact Pauli bit permutation. Keep old dense-matrix L<=8 restriction unchanged. No full matrices or general tests.",
+  "numerical_tolerances": {"vector_absolute": 1e-12, "probability_absolute": 1e-12, "SVD_rank_threshold": 1e-10, "entropy_bound_slack": 1e-9},
+  "zero_probability_rule": "Preserve any zero branch as such; never replace it or select an alternative",
+  "negative_control": "L10 initial five Bell pairs across the half chain have S=5 at t0, exceeding the allXXX product-input bound4; record as a counterexample to removing the product-state assumption, not to the theorem",
+  "cap_seconds":120,
+  "preserve": "Old code, data, prior frozen plans and reports unchanged. All checks are deterministic finite vectors, no production trajectories, no hardware or parameter scans."
+}

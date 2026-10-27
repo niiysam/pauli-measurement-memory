@@ -1,0 +1,68 @@
+{
+  "status": "CENTRAL_QUOTIENT_REDUCES_TO_KNOWN_PAIRING_MECHANISM",
+  "full_omega": [
+    6,
+    13,
+    3,
+    50,
+    8,
+    8
+  ],
+  "quotient_omega": [
+    6,
+    13,
+    3,
+    18,
+    8
+  ],
+  "central_vector": 48,
+  "quotient_map": "(x&31) XOR (((x>>5)&1)<<4)",
+  "kernel": [
+    0,
+    48
+  ],
+  "root_edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ]
+  ],
+  "sublattice_A": [
+    0,
+    1
+  ],
+  "sublattice_B": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "upper_bound": "dimH<=dim project(H)+1<=2+1=3 for every history",
+  "lower_witness": [
+    0,
+    4,
+    5
+  ],
+  "full_Rstar_from_old_data": 3,
+  "quotient_Rstar_from_old_data": 2,
+  "independent_theorem": "Pairing and central quotient proofs in MASTER section15.3; this arithmetic audit checks their fixed matrices, not general originality.",
+  "source_sha256": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+  "new_state_trajectories": 0,
+  "QPU_jobs": 0
+}

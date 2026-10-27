@@ -1,0 +1,10 @@
+{
+  "round": 6,
+  "date": "2026-10-26",
+  "type": "Analytic refinement of the already authorized secondary question, before any extra calculation; no change to old frozen plans",
+  "claim": "For each fixed L>=7 and pi with at least two positive species, stationary initialization and maximally mixed quantum input, the expected first exact purification time is Theta((1-c)^-1) as c approaches1 from below. This is fixed-L endpoint scaling, not a thermodynamic critical exponent.",
+  "upper_bound_strategy": "A coverage interval M=ceil(L log(6L)/(1-c)) refreshes every one of the3L labels with probability at least1/2. Conditional on the refresh-selector coverage event alone, final memory has the product stationary law; it need NOT be independent of the quantum state. Then require a fixed commuting full-rank cluster dictionary and one permutation sweep with every label held. For c>=1/2 this succeeds with a strictly positive probability independent of1-c, uniformly over the previous full quantum/controller history.",
+  "lower_bound_strategy": "The pre-existing isolated-K3 event I0 has probability p_iso>0 and prevents exact purification until at least the first global refresh-branch event. Its mean waiting time is1/(1-c^3). Keep this event distinct from actual word change and do not replace it with a claimed local K3 survival law.",
+  "failure_checks": "Do not assume the quantum state and freshly mixed controller are independent; a rank1 word works for arbitrary joint correlations. Do not infer polynomial-in-L purification or equality of purity and entanglement phase boundaries. If conditioning on measurement outcomes changes an asserted controller distribution, average those future outcomes and use external-control independence correctly.",
+  "cost": "Proof only, no extra quantum runs, occupancy enumeration, parameter choices or production. Stop after this bounded analytic refinement and the already frozen checks."
+}

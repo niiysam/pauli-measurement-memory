@@ -1,0 +1,31 @@
+{
+  "status": "COMPLETE",
+  "date": "2026-10-26",
+  "scientific_verdict": "H3_UNRESOLVED",
+  "submission_verdict": "NO_GO_FOR_CRITICAL_SHIFT_OR_NEW_CRITICAL_DYNAMICS_CLAIM",
+  "primary": {
+    "q": 0.13,
+    "small": 48,
+    "large": 96,
+    "observable": "tau",
+    "primary": true,
+    "estimate": -0.5028567398140609,
+    "lower": -1.2807813445341079,
+    "upper": 0.22946680094903701,
+    "status": "UNRESOLVED",
+    "median_small_c0": 12.145833333333329,
+    "median_small_c6": 12.395833333333329,
+    "median_large_c0": 18.479166666666664,
+    "median_large_c6": 11.40625
+  },
+  "new_primary_convergence_pass": true,
+  "all_window_checks_pass": false,
+  "old_failures_preserved": true,
+  "third_batch_authorized": false,
+  "qpu_account_connections": 0,
+  "qpu_jobs_submitted": 0,
+  "report": "/Users/a1-6/Downloads/temporal_mipt_project/CRITICALITY_IBM_MASTER.md",
+  "automation_status": "PAUSED",
+  "finished_at_minsk": "2026-10-26T04:49:56.092865+03:00",
+  "additional_production_stages": 0
+}

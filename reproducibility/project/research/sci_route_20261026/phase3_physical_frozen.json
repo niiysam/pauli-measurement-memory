@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-26",
+  "relation": "Single original-geometric realization selected by phase3_frozen.json; no second graph or target",
+  "selected_n": 6,
+  "selected_edge_code": 207,
+  "selected_omega": [6,13,3,50,8,8],
+  "obstruction": "Induced claw centered at block vertex3 with leaves1,4,5; three disjoint bilinear pairs cannot all intersect the two endpoints of a central bilinear",
+  "L": 10,
+  "labels_hand_derived_before_verification": ["XXX","XXX","XXY","XXY","XXX","XXY","XXX","XXX","XXY","XYX"],
+  "construction": "All first letters X, third letters X/Y fixed by distance-two edge; cyclic middle constraint [s_j!=X] XOR [t_j!=s_(j+1)]=adjacent_edge. These hand-derived labels predict the lexicographically first feasible middle sequence: all X except s9=Y. Independently implement transfer DP to check, not choose according to quantum output.",
+  "block_anchors": [2,3,4,5,6,7],
+  "guards": [0,1,8,9],
+  "guard_edges": [[0,8],[0,9]],
+  "predicted": {"s":10,"a":3,"rstar":6,"Smin":4,"k_static":3,"gap":1},
+  "maximum_rank_witness": [1,2,6,7,8,9],
+  "independence_proof": "All words have only X/Y, so X components are the binary circulant 1+x+x^2. It has no kernel on a periodic L10 chain since the recurrence has period3 and gcd(10,3)=1; the only constant solution also vanishes in characteristic2. Thus all ten generators independent.",
+  "checks": ["separately constructed three-state cyclic transfer DP", "exact physical Pauli commutation/rank", "physical unsigned-group closure against stored formal Rstar, including all successors", "existing signed engine and independent Stim Bell-reference entropy for all64 six-event outcome branches"],
+  "cap": {"seconds":120,"reachable_states":20000,"outcome_branches":128,"production":0,"QPU":0},
+  "stop": "Any mismatch is a failed verification; do not change the graph, words or predicted values. On agreement, stop this experiment and adjudicate novelty."
+}

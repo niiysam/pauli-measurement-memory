@@ -1,0 +1,30 @@
+{
+  "status": "PASS_INDEPENDENT_ALL_NEW49_SCORE_ARITHMETIC",
+  "methods": "Directintegerbitmasks/exactFractions; rawstrings recounted; independent fixedt3constant and simultaneousradius",
+  "checked_rawshots": 50176,
+  "science_axes": 33,
+  "record_difference_axes": 4,
+  "insensitive_record_difference_exact": {
+    "H0": "0",
+    "H1": "0"
+  },
+  "predetermined_MCM_descriptive": {
+    "ANC5": {
+      "bit0_one_fraction_W0": 0.001953125,
+      "bit1_one_fraction_W0": 0.00390625,
+      "bit2_one_fraction_W0": 0.0029296875,
+      "bit3_one_fraction_W0": 0.0,
+      "bit4_one_fraction_W0": 0.00390625
+    },
+    "P5": {
+      "bit0_one_fraction_W0": 0.0615234375,
+      "bit1_one_fraction_W0": 0.119140625,
+      "bit2_one_fraction_W0": 0.1796875,
+      "bit3_one_fraction_W0": 0.2236328125,
+      "bit4_one_fraction_W0": 0.244140625
+    }
+  },
+  "original_reader_imported": false,
+  "old8_analysis_modified": false,
+  "new_jobs": 0
+}

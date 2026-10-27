@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "protocol_records": 1024,
+  "parent_pairs": 512,
+  "window_rows": 2048,
+  "max_arithmetic_error": 3.885780586188048e-16,
+  "wide_signed_state_rank_checks": 768,
+  "pure_events_including_reused": 1006632960,
+  "protected_inputs_unchanged": true,
+  "scope": "Independent raw-archive arithmetic/rank/bootstrap audit, no quantum-state replay or production",
+  "code_sha256": "7d5e3407fc8c795723bc7bdba6e1bd9c7bc931e84fa1f7fa5ff095e415236531"
+}

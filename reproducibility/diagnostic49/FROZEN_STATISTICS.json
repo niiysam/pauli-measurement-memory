@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-27",
+  "frozen_before_new_QPU_data": true,
+  "design_informed_by": "Old8block hardware data and explicitly labelled cached-noise engineering inspected; this is not an independent discovery registration.",
+  "sample_plan": {
+    "blocks": 4,
+    "settings_per_block": 49,
+    "shots_per_setting": 256,
+    "N_per_setting": 1024,
+    "append_for_significance": false,
+    "no_postselection": true
+  },
+  "target": "Average conditional expected signed score over actual complete setting events; not automatically one common quantum-state fidelity.",
+  "alpha": 0.05,
+  "simultaneous_coordinates": 37,
+  "coordinates": "33 science signed means plus4 transverse full-minus-sensitive-record masked differences. Calibrations descriptive only.",
+  "bound": "For coordinateY in[a,b], radius=(b-a)*sqrt(log(2J/alpha)/(2N)). Fixed/predictable labels and complete predeclaredN; no iid or stationary-device assumption needed for this conditional-score target.",
+  "proof": "Write mu_i=E[Y_i|F_(i-1)]. Conditional Hoeffding lemma gives E[exp(lambda(Y_i-mu_i))|F_(i-1)]<=exp(lambda^2(b-a)^2/8). Iteration and Chernoff give P(|mean(Y)-mean(mu)|>=epsilon)<=2exp(-2N epsilon^2/(b-a)^2). Union bound overJ=37. Derived conditional-MGF argument uses known concentration tools; no novelty claim.",
+  "interpretation_limit": "Averages include actual basis/context/time conditions. Quantum Bell fidelity requires additional trusted common-state/preparation/basis assumptions. No .03 systematic margin assumed or certified.",
+  "precision": {
+    "raw_signed_axis_radius": 0.11940442509366866,
+    "nominal_Bell_score_radius": 0.0895533188202515,
+    "two_group_contrast_radius": 0.179106637640503,
+    "full_minus_sensitive_record_score_radius": 0.11940442509366866
+  },
+  "planned_contrasts": [
+    "IDLE5-BELL0",
+    "ANC5-IDLE5",
+    "P5-ANC5",
+    "H0-H1"
+  ],
+  "phase": "All12 predeclared phase coordinates; ideal0. No post-hoc Bell phase optimization.",
+  "secondary": "Prespecified H0 omit bit0/H1 omit bit1; unchanged insensitive controls; no extra shots.",
+  "block_error": "Report shot counts plus four individual block vectors and paired descriptive t3 intervals; four jobs need not be independent or stationary, so t3 descriptions are not arbitrary-drift confidence guarantees.",
+  "operational_decision": "Nominal BELL0 lower score>.70 and separation from SEP0 are engineering interpretability flags, not entanglement certificates or publication gates. If baseline poor, retain all results and do not enlarge samples or start further circuit stages.",
+  "stop": "Always collect only fixed4 approved blocks, or stop on execution/integrity/unknownPOST failure; incomplete dataset not relabelled complete. No new job automatically follows the results."
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this code and data archive when using its results."
+title: "Code and data for Entanglement barriers and purification in frozen and slowly refreshed Pauli measurement circuits"
+authors:
+  - family-names: Zhou
+    given-names: Hancheng
+    affiliation: "Polessky State University; Guangdong University of Education"
+version: 1.0.0
+date-released: 2026-10-27
+repository-code: "https://github.com/niiysam/pauli-measurement-memory"
+url: "https://zenodo.org/records/23700827"
+license: MIT

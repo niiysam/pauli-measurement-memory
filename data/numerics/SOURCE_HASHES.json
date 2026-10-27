@@ -1,0 +1,57 @@
+[
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/late_summaries.csv",
+    "copy": "data/numerics/late_summaries.csv",
+    "sha256": "10af237e63a8e19ff44451c556d61e428b3061c17a47652a72cb9dd8177dd30a"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/parent_windows.csv",
+    "copy": "data/numerics/parent_windows.csv",
+    "sha256": "7a6268aad95497c1783e558619ab6abe6a084d85478eaa4188eddff6757a1f99"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/purification_curves.csv",
+    "copy": "data/numerics/purification_curves.csv",
+    "sha256": "bfe6a49c69b4ce277f23a4825a0edba29a85b0dbd07e93f38523b241c9d38f0c"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/purification_parents.csv",
+    "copy": "data/numerics/purification_parents.csv",
+    "sha256": "709b354d8460531928e5a43a93a297c9bd68f67facc68a4fb9fdb066f42d2ffb"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/purification_summary.csv",
+    "copy": "data/numerics/purification_summary.csv",
+    "sha256": "723e1b4e34bb253cdb581901ad499f90f943711ca7e7c9471b100bd9279d2274"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/finite_grid_S.csv",
+    "copy": "data/numerics/finite_grid_S.csv",
+    "sha256": "db72a231b6c47b1671bd59a527ff3b1436dbb889c8996960465a7360d748b5e0"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/lifetime_growth.csv",
+    "copy": "data/numerics/lifetime_growth.csv",
+    "sha256": "0eb917e7f578f079575cfb20a2c7c1a44f5b78ed46effccf6bf77910bf48f6f5"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/convergence_checks.csv",
+    "copy": "data/numerics/convergence_checks.csv",
+    "sha256": "837e9500200c99557346080b6a6cfff77aebeec06fdf8cf3fd8ae53db1914d25"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/final_decision.json",
+    "copy": "data/numerics/final_decision.json",
+    "sha256": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/config.json",
+    "copy": "data/numerics/config.json",
+    "sha256": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3"
+  },
+  {
+    "source": "/Users/a1-6/Downloads/temporal_mipt_project/results/criticality_followup_20261026/independent_check.json",
+    "copy": "data/numerics/independent_check.json",
+    "sha256": "054f95e16b920897bb1a2ad18a4781528a58dde0f4ea779d567f810d07431159"
+  }
+]

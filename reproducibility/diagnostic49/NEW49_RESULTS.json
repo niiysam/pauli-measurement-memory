@@ -1,0 +1,519 @@
+{
+  "status": "COMPLETE_NEW_DIAGNOSTIC_NO_ENTANGLEMENT_CERTIFICATE",
+  "data_origin": "IBM_QPU_RAW",
+  "blocks": [
+    {
+      "block": 0,
+      "nominal_scores": {
+        "BELL0": 0.919921875,
+        "IDLE5": 0.142578125,
+        "ANC5": 0.1484375,
+        "P5": 0.556640625,
+        "H0": 0.470703125,
+        "H1": 0.455078125,
+        "SEP0": 0.2734375
+      }
+    },
+    {
+      "block": 1,
+      "nominal_scores": {
+        "BELL0": 0.9375,
+        "IDLE5": 0.162109375,
+        "ANC5": 0.12890625,
+        "P5": 0.486328125,
+        "H0": 0.41796875,
+        "H1": 0.390625,
+        "SEP0": 0.267578125
+      }
+    },
+    {
+      "block": 2,
+      "nominal_scores": {
+        "BELL0": 0.923828125,
+        "IDLE5": 0.171875,
+        "ANC5": 0.171875,
+        "P5": 0.58984375,
+        "H0": 0.439453125,
+        "H1": 0.447265625,
+        "SEP0": 0.2578125
+      }
+    },
+    {
+      "block": 3,
+      "nominal_scores": {
+        "BELL0": 0.904296875,
+        "IDLE5": 0.193359375,
+        "ANC5": 0.12109375,
+        "P5": 0.51953125,
+        "H0": 0.435546875,
+        "H1": 0.423828125,
+        "SEP0": 0.205078125
+      }
+    }
+  ],
+  "axes": {
+    "BELL0_W0": {
+      "mean": 0.884765625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.7653611999063313,
+        1.0041700500936686
+      ]
+    },
+    "BELL0_W1": {
+      "mean": 0.857421875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.7380174499063313,
+        0.9768263000936687
+      ]
+    },
+    "BELL0_W2": {
+      "mean": 0.943359375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.8239549499063313,
+        1.0627638000936686
+      ]
+    },
+    "BELL0_D0": {
+      "mean": 0.103515625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.015888800093668665,
+        0.22292005009366866
+      ]
+    },
+    "BELL0_D1": {
+      "mean": 0.109375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.010029425093668665,
+        0.22877942509366866
+      ]
+    },
+    "IDLE5_W0": {
+      "mean": -0.013671875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.13307630009366866,
+        0.10573255009366866
+      ]
+    },
+    "IDLE5_W1": {
+      "mean": -0.001953125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.12135755009366866,
+        0.11745130009366866
+      ]
+    },
+    "IDLE5_W2": {
+      "mean": -0.314453125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.43385755009366866,
+        -0.19504869990633134
+      ]
+    },
+    "IDLE5_D0": {
+      "mean": 0.291015625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.17161119990633134,
+        0.41042005009366866
+      ]
+    },
+    "IDLE5_D1": {
+      "mean": -0.60546875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.7248731750936687,
+        -0.48606432490633134
+      ]
+    },
+    "ANC5_W0": {
+      "mean": -0.0703125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.18971692509366866,
+        0.049091925093668665
+      ]
+    },
+    "ANC5_W1": {
+      "mean": 0.001953125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.11745130009366866,
+        0.12135755009366866
+      ]
+    },
+    "ANC5_W2": {
+      "mean": -0.361328125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.48073255009366866,
+        -0.24192369990633134
+      ]
+    },
+    "ANC5_D0": {
+      "mean": 0.263671875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.14426744990633134,
+        0.38307630009366866
+      ]
+    },
+    "ANC5_D1": {
+      "mean": -0.572265625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.6916700500936687,
+        -0.45286119990633134
+      ]
+    },
+    "P5_W0": {
+      "mean": 0.384765625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.26536119990633134,
+        0.5041700500936687
+      ]
+    },
+    "P5_W1": {
+      "mean": 0.275390625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.15598619990633134,
+        0.39479505009366866
+      ]
+    },
+    "P5_W2": {
+      "mean": 0.4921875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.37278307490633134,
+        0.6115919250936687
+      ]
+    },
+    "P5_D0": {
+      "mean": -0.330078125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.44948255009366866,
+        -0.21067369990633134
+      ]
+    },
+    "P5_D1": {
+      "mean": -0.462890625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.5822950500936687,
+        -0.34348619990633134
+      ]
+    },
+    "H0_W0": {
+      "mean": 0.1484375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.029033074906331335,
+        0.26784192509366866
+      ]
+    },
+    "H0_W1": {
+      "mean": 0.201171875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.08176744990633134,
+        0.32057630009366866
+      ]
+    },
+    "H0_W2": {
+      "mean": 0.4140625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.29465807490633134,
+        0.5334669250936687
+      ]
+    },
+    "H0_D0": {
+      "mean": 0.41015625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.29075182490633134,
+        0.5295606750936687
+      ]
+    },
+    "H0_D1": {
+      "mean": -0.373046875,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.49245130009366866,
+        -0.25364244990633134
+      ]
+    },
+    "H1_W0": {
+      "mean": 0.15234375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.032939324906331335,
+        0.27174817509366866
+      ]
+    },
+    "H1_W1": {
+      "mean": 0.18359375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.06418932490633134,
+        0.30299817509366866
+      ]
+    },
+    "H1_W2": {
+      "mean": 0.380859375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.26145494990633134,
+        0.5002638000936687
+      ]
+    },
+    "H1_D0": {
+      "mean": 0.359375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        0.23997057490633134,
+        0.47877942509366866
+      ]
+    },
+    "H1_D1": {
+      "mean": -0.30859375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.42799817509366866,
+        -0.18918932490633134
+      ]
+    },
+    "SEP0_W0": {
+      "mean": -0.05078125,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.17018567509366866,
+        0.06862317509366866
+      ]
+    },
+    "SEP0_W1": {
+      "mean": -0.00390625,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.12331067509366866,
+        0.11549817509366866
+      ]
+    },
+    "SEP0_W2": {
+      "mean": 0.05859375,
+      "radius": 0.11940442509366866,
+      "simultaneous_conditional_mean_interval": [
+        -0.060810675093668665,
+        0.17799817509366866
+      ]
+    },
+    "H0_REC0": {
+      "mean": 0.08984375,
+      "radius": 0.23880885018733733,
+      "simultaneous_conditional_mean_interval": [
+        -0.14896510018733733,
+        0.32865260018733733
+      ]
+    },
+    "H0_REC1": {
+      "mean": 0.125,
+      "radius": 0.23880885018733733,
+      "simultaneous_conditional_mean_interval": [
+        -0.11380885018733733,
+        0.36380885018733733
+      ]
+    },
+    "H1_REC0": {
+      "mean": 0.09375,
+      "radius": 0.23880885018733733,
+      "simultaneous_conditional_mean_interval": [
+        -0.14505885018733733,
+        0.33255885018733733
+      ]
+    },
+    "H1_REC1": {
+      "mean": 0.080078125,
+      "radius": 0.23880885018733733,
+      "simultaneous_conditional_mean_interval": [
+        -0.15873072518733733,
+        0.31888697518733733
+      ]
+    }
+  },
+  "nominal_groups": {
+    "BELL0": {
+      "mean": 0.92138671875,
+      "simultaneous_conditional_score_interval": [
+        0.8318333999297485,
+        1.0109400375702515
+      ]
+    },
+    "IDLE5": {
+      "mean": 0.16748046875,
+      "simultaneous_conditional_score_interval": [
+        0.0779271499297485,
+        0.2570337875702515
+      ]
+    },
+    "ANC5": {
+      "mean": 0.142578125,
+      "simultaneous_conditional_score_interval": [
+        0.0530248061797485,
+        0.2321314438202515
+      ]
+    },
+    "P5": {
+      "mean": 0.5380859375,
+      "simultaneous_conditional_score_interval": [
+        0.4485326186797485,
+        0.6276392563202515
+      ]
+    },
+    "H0": {
+      "mean": 0.44091796875,
+      "simultaneous_conditional_score_interval": [
+        0.3513646499297485,
+        0.5304712875702515
+      ]
+    },
+    "H1": {
+      "mean": 0.42919921875,
+      "simultaneous_conditional_score_interval": [
+        0.3396458999297485,
+        0.5187525375702515
+      ]
+    },
+    "SEP0": {
+      "mean": 0.2509765625,
+      "simultaneous_conditional_score_interval": [
+        0.1614232436797485,
+        0.3405298813202515
+      ]
+    }
+  },
+  "paired_contrasts": {
+    "storage": {
+      "mean": -0.75390625,
+      "simultaneous_conditional_score_interval": [
+        -0.933012887640503,
+        -0.574799612359497
+      ],
+      "four_block_descriptive_t3_95": [
+        -0.8030457951947464,
+        -0.7047667048052536
+      ]
+    },
+    "ancilla_MCM": {
+      "mean": -0.02490234375,
+      "simultaneous_conditional_score_interval": [
+        -0.204008981390503,
+        0.154204293890503
+      ],
+      "four_block_descriptive_t3_95": [
+        -0.08211703931625151,
+        0.032312351816251514
+      ]
+    },
+    "joint_QND": {
+      "mean": 0.3955078125,
+      "simultaneous_conditional_score_interval": [
+        0.216401174859497,
+        0.574614450140503
+      ],
+      "four_block_descriptive_t3_95": [
+        0.35316028112158765,
+        0.43785534387841235
+      ]
+    },
+    "history": {
+      "mean": 0.01171875,
+      "simultaneous_conditional_score_interval": [
+        -0.167387887640503,
+        0.190825387640503
+      ],
+      "four_block_descriptive_t3_95": [
+        -0.011538327590187934,
+        0.034975827590187934
+      ]
+    }
+  },
+  "record_contrasts": {
+    "H0": {
+      "mean": 0.0537109375,
+      "simultaneous_conditional_score_interval": [
+        -0.06569348759366866,
+        0.17311536259366866
+      ]
+    },
+    "H1": {
+      "mean": 0.04345703125,
+      "simultaneous_conditional_score_interval": [
+        -0.07594739384366866,
+        0.16286145634366866
+      ]
+    }
+  },
+  "calibration_descriptive_only": {
+    "CAL_0000": {
+      "empirical_terminal_mismatch": 0.009765625
+    },
+    "CAL_0001": {
+      "empirical_terminal_mismatch": 0.017578125
+    },
+    "CAL_0010": {
+      "empirical_terminal_mismatch": 0.0185546875
+    },
+    "CAL_0011": {
+      "empirical_terminal_mismatch": 0.0224609375
+    },
+    "CAL_0100": {
+      "empirical_terminal_mismatch": 0.0205078125
+    },
+    "CAL_0101": {
+      "empirical_terminal_mismatch": 0.0224609375
+    },
+    "CAL_0110": {
+      "empirical_terminal_mismatch": 0.0244140625
+    },
+    "CAL_0111": {
+      "empirical_terminal_mismatch": 0.0234375
+    },
+    "CAL_1000": {
+      "empirical_terminal_mismatch": 0.025390625
+    },
+    "CAL_1001": {
+      "empirical_terminal_mismatch": 0.013671875
+    },
+    "CAL_1010": {
+      "empirical_terminal_mismatch": 0.0263671875
+    },
+    "CAL_1011": {
+      "empirical_terminal_mismatch": 0.021484375
+    },
+    "CAL_1100": {
+      "empirical_terminal_mismatch": 0.0263671875
+    },
+    "CAL_1101": {
+      "empirical_terminal_mismatch": 0.0341796875
+    },
+    "CAL_1110": {
+      "empirical_terminal_mismatch": 0.0322265625
+    },
+    "CAL_1111": {
+      "empirical_terminal_mismatch": 0.03515625
+    }
+  },
+  "interval_target": "Average conditional expected signed scores at actual setting events; fixed complete counts, no postselection; not stationary-state fidelity",
+  "assumptions": "Bounded observed scores and predictable event labels; conditional expectations refer to past-outcome filtration. Quantum interpretations additionally require trusted preparations/axes/context; not established by these intervals.",
+  "old8_primary_changed": false,
+  "hardware_jobs_submitted": 0
+}

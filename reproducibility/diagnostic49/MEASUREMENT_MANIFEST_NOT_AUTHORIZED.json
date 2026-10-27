@@ -1,0 +1,1841 @@
+{
+  "status": "OFFLINE_PREPARED_NOT_AUTHORIZED",
+  "settings": [
+    {
+      "name": "BELL0_W0",
+      "group": "BELL0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "BELL0_W1",
+      "group": "BELL0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "BELL0_W2",
+      "group": "BELL0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "BELL0_D0",
+      "group": "BELL0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYX",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "BELL0_D1",
+      "group": "BELL0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZY",
+        [
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "IDLE5_W0",
+      "group": "IDLE5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "IDLE5_W1",
+      "group": "IDLE5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "IDLE5_W2",
+      "group": "IDLE5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "IDLE5_D0",
+      "group": "IDLE5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYX",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "IDLE5_D1",
+      "group": "IDLE5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZY",
+        [
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "ANC5_W0",
+      "group": "ANC5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "ANC5_W1",
+      "group": "ANC5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "ANC5_W2",
+      "group": "ANC5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "ANC5_D0",
+      "group": "ANC5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYX",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "ANC5_D1",
+      "group": "ANC5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZY",
+        [
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "P5_W0",
+      "group": "P5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "P5_W1",
+      "group": "P5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "P5_W2",
+      "group": "P5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "P5_D0",
+      "group": "P5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYX",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "P5_D1",
+      "group": "P5",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZY",
+        [
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "H0_W0",
+      "group": "H0",
+      "kind": "diagnostic",
+      "h": 0,
+      "obs": [
+        "XZYX",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "H0_W1",
+      "group": "H0",
+      "kind": "diagnostic",
+      "h": 0,
+      "obs": [
+        "ZZZY",
+        [
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "H0_W2",
+      "group": "H0",
+      "kind": "diagnostic",
+      "h": 0,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "H0_D0",
+      "group": "H0",
+      "kind": "diagnostic",
+      "h": 0,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "H0_D1",
+      "group": "H0",
+      "kind": "diagnostic",
+      "h": 0,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "H1_W0",
+      "group": "H1",
+      "kind": "diagnostic",
+      "h": 1,
+      "obs": [
+        "XZYX",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "H1_W1",
+      "group": "H1",
+      "kind": "diagnostic",
+      "h": 1,
+      "obs": [
+        "ZZZY",
+        [
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "H1_W2",
+      "group": "H1",
+      "kind": "diagnostic",
+      "h": 1,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 1,
+      "shots": 256
+    },
+    {
+      "name": "H1_D0",
+      "group": "H1",
+      "kind": "diagnostic",
+      "h": 1,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "H1_D1",
+      "group": "H1",
+      "kind": "diagnostic",
+      "h": 1,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        -1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "SEP0_W0",
+      "group": "SEP0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "ZZZX",
+        [
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "SEP0_W1",
+      "group": "SEP0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZYY",
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "SEP0_W2",
+      "group": "SEP0",
+      "kind": "diagnostic",
+      "h": null,
+      "obs": [
+        "XZXZ",
+        [
+          0,
+          2,
+          3
+        ],
+        1
+      ],
+      "ideal_mean": 0,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0000",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 0,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0001",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 1,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0010",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 2,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0011",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 3,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0100",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 4,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0101",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 5,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0110",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 6,
+      "shots": 256
+    },
+    {
+      "name": "CAL_0111",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 7,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1000",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 8,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1001",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 9,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1010",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 10,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1011",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 11,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1100",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 12,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1101",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 13,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1110",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 14,
+      "shots": 256
+    },
+    {
+      "name": "CAL_1111",
+      "group": "CAL",
+      "kind": "calibration",
+      "pattern": 15,
+      "shots": 256
+    }
+  ],
+  "blocks": [
+    {
+      "block": 0,
+      "order": [
+        "CAL_1100",
+        "CAL_0101",
+        "ANC5_W1",
+        "IDLE5_W0",
+        "ANC5_W0",
+        "CAL_0001",
+        "H0_W2",
+        "H0_D1",
+        "H1_W1",
+        "H1_W0",
+        "CAL_0110",
+        "P5_D0",
+        "BELL0_W0",
+        "BELL0_W2",
+        "BELL0_D0",
+        "H0_W1",
+        "CAL_1101",
+        "H0_D0",
+        "H1_D0",
+        "ANC5_W2",
+        "CAL_0111",
+        "IDLE5_W2",
+        "CAL_0100",
+        "P5_W2",
+        "H1_D1",
+        "CAL_1111",
+        "BELL0_W1",
+        "IDLE5_D1",
+        "P5_W0",
+        "CAL_1011",
+        "SEP0_W1",
+        "CAL_1001",
+        "H0_W0",
+        "ANC5_D1",
+        "CAL_1110",
+        "CAL_0011",
+        "CAL_1000",
+        "P5_W1",
+        "SEP0_W2",
+        "CAL_0000",
+        "BELL0_D1",
+        "IDLE5_D0",
+        "P5_D1",
+        "H1_W2",
+        "IDLE5_W1",
+        "SEP0_W0",
+        "ANC5_D0",
+        "CAL_0010",
+        "CAL_1010"
+      ]
+    },
+    {
+      "block": 1,
+      "order": [
+        "BELL0_W0",
+        "H1_D0",
+        "H0_W0",
+        "IDLE5_D0",
+        "CAL_1011",
+        "P5_D1",
+        "CAL_0111",
+        "ANC5_W1",
+        "CAL_0110",
+        "ANC5_D1",
+        "ANC5_W0",
+        "ANC5_D0",
+        "H0_D1",
+        "P5_W2",
+        "CAL_1101",
+        "CAL_0000",
+        "BELL0_W1",
+        "CAL_1000",
+        "ANC5_W2",
+        "H1_W1",
+        "CAL_0011",
+        "IDLE5_W0",
+        "CAL_0101",
+        "CAL_0001",
+        "SEP0_W2",
+        "H0_D0",
+        "CAL_0100",
+        "P5_D0",
+        "H1_W2",
+        "BELL0_W2",
+        "IDLE5_W1",
+        "P5_W0",
+        "BELL0_D1",
+        "IDLE5_D1",
+        "IDLE5_W2",
+        "SEP0_W1",
+        "H0_W2",
+        "P5_W1",
+        "SEP0_W0",
+        "H1_D1",
+        "CAL_1100",
+        "BELL0_D0",
+        "CAL_1001",
+        "CAL_1111",
+        "CAL_1110",
+        "H0_W1",
+        "CAL_1010",
+        "H1_W0",
+        "CAL_0010"
+      ]
+    },
+    {
+      "block": 2,
+      "order": [
+        "H0_W2",
+        "CAL_1001",
+        "BELL0_W0",
+        "CAL_1100",
+        "CAL_0100",
+        "BELL0_D0",
+        "ANC5_W2",
+        "CAL_0111",
+        "BELL0_D1",
+        "CAL_0011",
+        "P5_W0",
+        "CAL_0001",
+        "CAL_1000",
+        "H1_W0",
+        "CAL_1111",
+        "IDLE5_W0",
+        "ANC5_D1",
+        "CAL_0010",
+        "H0_D0",
+        "IDLE5_D1",
+        "H0_W1",
+        "CAL_1011",
+        "H0_D1",
+        "CAL_1101",
+        "ANC5_D0",
+        "IDLE5_W2",
+        "H1_D1",
+        "CAL_1110",
+        "IDLE5_W1",
+        "CAL_1010",
+        "IDLE5_D0",
+        "BELL0_W1",
+        "SEP0_W2",
+        "CAL_0000",
+        "SEP0_W0",
+        "CAL_0101",
+        "P5_D1",
+        "CAL_0110",
+        "SEP0_W1",
+        "ANC5_W0",
+        "H1_D0",
+        "P5_W1",
+        "ANC5_W1",
+        "H1_W2",
+        "H0_W0",
+        "P5_D0",
+        "P5_W2",
+        "BELL0_W2",
+        "H1_W1"
+      ]
+    },
+    {
+      "block": 3,
+      "order": [
+        "P5_D0",
+        "IDLE5_D0",
+        "P5_W1",
+        "P5_D1",
+        "CAL_0110",
+        "CAL_1101",
+        "CAL_0000",
+        "ANC5_W1",
+        "H1_D0",
+        "CAL_0100",
+        "BELL0_W0",
+        "CAL_1100",
+        "P5_W0",
+        "IDLE5_D1",
+        "H0_D1",
+        "IDLE5_W1",
+        "CAL_1011",
+        "CAL_1010",
+        "ANC5_W2",
+        "CAL_1111",
+        "H0_D0",
+        "CAL_0101",
+        "H0_W0",
+        "CAL_1000",
+        "IDLE5_W2",
+        "SEP0_W1",
+        "BELL0_W1",
+        "BELL0_W2",
+        "ANC5_W0",
+        "H1_W1",
+        "SEP0_W0",
+        "H0_W1",
+        "BELL0_D0",
+        "P5_W2",
+        "ANC5_D1",
+        "BELL0_D1",
+        "H1_W2",
+        "CAL_1001",
+        "CAL_0001",
+        "CAL_0111",
+        "SEP0_W2",
+        "H0_W2",
+        "CAL_0011",
+        "CAL_1110",
+        "H1_W0",
+        "H1_D1",
+        "ANC5_D0",
+        "IDLE5_W0",
+        "CAL_0010"
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "name": "BELL0_W0",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 22,
+        "sx": 11,
+        "delay": 10,
+        "cz": 4,
+        "measure": 4,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "BELL0_W1",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 24,
+        "sx": 13,
+        "delay": 8,
+        "cz": 4,
+        "measure": 4,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "BELL0_W2",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 24,
+        "sx": 12,
+        "delay": 9,
+        "cz": 4,
+        "measure": 4,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "BELL0_D0",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 25,
+        "sx": 13,
+        "delay": 8,
+        "cz": 4,
+        "measure": 4,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "BELL0_D1",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 21,
+        "sx": 11,
+        "delay": 10,
+        "cz": 4,
+        "measure": 4,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "IDLE5_W0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 35,
+        "rz": 22,
+        "sx": 11,
+        "barrier": 7,
+        "cz": 4,
+        "measure": 4
+      }
+    },
+    {
+      "name": "IDLE5_W1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 33,
+        "rz": 24,
+        "sx": 13,
+        "barrier": 7,
+        "cz": 4,
+        "measure": 4
+      }
+    },
+    {
+      "name": "IDLE5_W2",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 34,
+        "rz": 24,
+        "sx": 12,
+        "barrier": 7,
+        "cz": 4,
+        "measure": 4
+      }
+    },
+    {
+      "name": "IDLE5_D0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 33,
+        "rz": 25,
+        "sx": 13,
+        "barrier": 7,
+        "cz": 4,
+        "measure": 4
+      }
+    },
+    {
+      "name": "IDLE5_D1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 35,
+        "rz": 21,
+        "sx": 11,
+        "barrier": 7,
+        "cz": 4,
+        "measure": 4
+      }
+    },
+    {
+      "name": "ANC5_W0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 55,
+        "rz": 22,
+        "sx": 11,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5,
+        "cz": 4
+      }
+    },
+    {
+      "name": "ANC5_W1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 53,
+        "rz": 24,
+        "sx": 13,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5,
+        "cz": 4
+      }
+    },
+    {
+      "name": "ANC5_W2",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 54,
+        "rz": 24,
+        "sx": 12,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5,
+        "cz": 4
+      }
+    },
+    {
+      "name": "ANC5_D0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 53,
+        "rz": 25,
+        "sx": 13,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5,
+        "cz": 4
+      }
+    },
+    {
+      "name": "ANC5_D1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 55,
+        "rz": 21,
+        "sx": 11,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5,
+        "cz": 4
+      }
+    },
+    {
+      "name": "P5_W0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 102,
+        "delay": 70,
+        "sx": 51,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "P5_W1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 104,
+        "delay": 68,
+        "sx": 53,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "P5_W2",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 104,
+        "delay": 69,
+        "sx": 52,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "P5_D0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 105,
+        "delay": 68,
+        "sx": 53,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "P5_D1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 101,
+        "delay": 70,
+        "sx": 51,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H0_W0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 99,
+        "delay": 68,
+        "sx": 51,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H0_W1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 95,
+        "delay": 70,
+        "sx": 49,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H0_W2",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 98,
+        "delay": 69,
+        "sx": 50,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H0_D0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 96,
+        "delay": 70,
+        "sx": 49,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H0_D1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 98,
+        "delay": 68,
+        "sx": 51,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H1_W0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 99,
+        "delay": 68,
+        "sx": 51,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H1_W1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 95,
+        "delay": 70,
+        "sx": 49,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H1_W2",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 98,
+        "delay": 69,
+        "sx": 50,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H1_D0",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 96,
+        "delay": 70,
+        "sx": 49,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "H1_D1",
+      "duration_seconds": 3.0944e-05,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 98,
+        "delay": 68,
+        "sx": 51,
+        "cz": 19,
+        "measure": 9,
+        "barrier": 7,
+        "reset": 5
+      }
+    },
+    {
+      "name": "SEP0_W0",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 18,
+        "delay": 15,
+        "sx": 9,
+        "measure": 4,
+        "cz": 3,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "SEP0_W1",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 20,
+        "delay": 13,
+        "sx": 11,
+        "measure": 4,
+        "cz": 3,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "SEP0_W2",
+      "duration_seconds": 2.644e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "rz": 20,
+        "delay": 14,
+        "sx": 10,
+        "measure": 4,
+        "cz": 3,
+        "barrier": 2
+      }
+    },
+    {
+      "name": "CAL_0000",
+      "duration_seconds": 2.1800000000000003e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 1
+      }
+    },
+    {
+      "name": "CAL_0001",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 4,
+        "measure": 4,
+        "x": 1
+      }
+    },
+    {
+      "name": "CAL_0010",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 4,
+        "measure": 4,
+        "x": 1
+      }
+    },
+    {
+      "name": "CAL_0011",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 3,
+        "x": 2
+      }
+    },
+    {
+      "name": "CAL_0100",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 4,
+        "measure": 4,
+        "x": 1
+      }
+    },
+    {
+      "name": "CAL_0101",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 3,
+        "x": 2
+      }
+    },
+    {
+      "name": "CAL_0110",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 3,
+        "x": 2
+      }
+    },
+    {
+      "name": "CAL_0111",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "x": 3,
+        "delay": 2
+      }
+    },
+    {
+      "name": "CAL_1000",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "delay": 4,
+        "measure": 4,
+        "x": 1
+      }
+    },
+    {
+      "name": "CAL_1001",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 3,
+        "x": 2
+      }
+    },
+    {
+      "name": "CAL_1010",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 3,
+        "x": 2
+      }
+    },
+    {
+      "name": "CAL_1011",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "x": 3,
+        "delay": 2
+      }
+    },
+    {
+      "name": "CAL_1100",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "delay": 3,
+        "x": 2
+      }
+    },
+    {
+      "name": "CAL_1101",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "x": 3,
+        "delay": 2
+      }
+    },
+    {
+      "name": "CAL_1110",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "measure": 4,
+        "x": 3,
+        "delay": 2
+      }
+    },
+    {
+      "name": "CAL_1111",
+      "duration_seconds": 2.212e-06,
+      "active_qubits": [
+        40,
+        42,
+        36,
+        21,
+        41
+      ],
+      "operations": {
+        "x": 4,
+        "measure": 4,
+        "delay": 1
+      }
+    }
+  ],
+  "layout": [
+    40,
+    42,
+    36,
+    21,
+    41
+  ],
+  "shots_per_setting": 256,
+  "shots_per_block": 12544,
+  "total_shots": 50176,
+  "rep_delay_seconds": 0.00025,
+  "conservative_INIT_seconds": 2.212e-06,
+  "modeled_execution_seconds_per_block": 3.376256,
+  "modeled_usage_seconds_per_job_by_subjobs": {
+    "1": 5.376256,
+    "4": 11.376256,
+    "13": 29.376256,
+    "49": 101.376256
+  },
+  "proposed_jobs": 4,
+  "proposed_max_execution_seconds_per_job": 110,
+  "proposed_aggregate_requested_cap_seconds": 440,
+  "user_reported_budget_seconds": 560,
+  "actual_billing_not_guaranteed": true,
+  "no_refresh_or_account": true,
+  "circuit_file": "DIAGNOSTIC49_NOT_AUTHORIZED.qpy",
+  "target_date": "2026-10-26 cached export; real submission requires exact current compatibility check",
+  "old_frozen_statistics_changed": false
+}

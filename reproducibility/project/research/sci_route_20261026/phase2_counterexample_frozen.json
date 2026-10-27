@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-26",
+  "relation_to_initial_plan": "Initial bounded search completed without counterexample. A new analytic construction using sublattice imbalance motivates ONE additional fixed counterexample, not a scan or changed decision threshold",
+  "construction": "Three disjoint K3 cliques on vertices 0..2,3..5,6..8 joined by edges (2,3),(5,6)",
+  "before_computation_prediction": {"n": 9, "a": 4, "Rstar": 3, "delta": 2},
+  "proof_basis": "Line graph of a bipartite tree with A=3 and B=7 Majoranas. Every measurement-only partial matching joins A to B, so at most three independent matching stabilizers; three mutually commuting edges attain the bound",
+  "original_geometry_check": "One fixed periodic L13 ensemble with all words XXX except anchors 0=ZXX, 3=XZX, 4=YXX, 5=XZX, 7=YXX, 8=XZX, 10=YXX; active nine-node block is anchors 2..10",
+  "original_geometry_prediction": {"L": 13, "s": 13, "a": 5, "Rstar": 6, "Smin": 7, "k_static": 5, "gap": 2},
+  "independent_checks": ["formal GF2 group enumeration", "Majorana partial-matching enumeration", "existing physical Pauli symplectic enumeration for fixed L13", "targeted signed-engine/Stim reference-entropy check on the maximum-rank witness"],
+  "stop_rule": "One example only, stop on mismatch or after confirmation; no further graph orders or quantum production",
+  "maximum_reachable_states": 20000,
+  "wall_time_seconds": 120,
+  "hardware": false,
+  "random_trajectories": 0,
+  "originality": "Not claimed: Majorana matching and dark-subspace mechanisms have prior literature"
+}

@@ -1,0 +1,232 @@
+{
+  "frozen_plan": {
+    "round": 1,
+    "date": "2026-10-26",
+    "scope": "Theoretical audit and finite exact counting at frozen c=1 only; no production trajectories",
+    "prior_result_under_attack": "S_mix-k_static >= N-r for isolated K3 graph components, with global kernel r<=2",
+    "cut_prediction": "rho=u3^2+(u2-u3)^2; uniform pi gives 5/81",
+    "improved_triangle_prediction": "p_iso=6*piX*piY*piZ*u3^4+2*u3^2*(u2-u3)^3; uniform pi gives 2/6561",
+    "methods": [
+      "Pauli-commutator enumeration of 729 cut label assignments",
+      "exact polynomial weighted counting of all 27^3 triangle choices and independently summed boundary operators",
+      "one asymmetric rational distribution cross-check",
+      "all bandwidth-two alternating matrices of orders 1 through 6 plus all alternating matrices of order 4"
+    ],
+    "finite_block_predictions": [
+      "one maximum-rank witness word drives every reachable state to maximum rank",
+      "maximum reachable rank adds over graph components",
+      "maximum independent set is not sufficient: C4 has alpha=2 but reachable rank=3"
+    ],
+    "max_quantum_L": 9,
+    "max_formal_generators": 6,
+    "maximum_states_per_exact_graph": 20000,
+    "wall_time_cap_seconds": 120,
+    "random_samples": 0,
+    "hardware_access": false,
+    "stop_on_mismatch": true,
+    "statistics": "Exact identities; no p-values, trajectory inference or significance selection",
+    "novelty_status_before": "UNVERIFIED; graph reduction, subsystem counts and inaccessible centers are known; do not equate exact counting with new physics",
+    "theory_output": "Derive finite-block entropy-density representation only if dependencies and endpoint limits can be controlled; report computability separately from numerical practicality",
+    "preservation": "Old data, scripts, frozen configurations and prior exact results remain unchanged"
+  },
+  "protected_before": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597"
+  },
+  "python": "3.14.6",
+  "local_counting": {
+    "cut_assignments": 729,
+    "triangle_choices": 2430,
+    "total_triangle_assignments": 19683,
+    "cut_coefficients": [
+      1,
+      0,
+      4,
+      12,
+      12,
+      8,
+      8
+    ],
+    "isolated_triangle_coefficients": [
+      0,
+      0,
+      6,
+      88,
+      600,
+      2640,
+      8784,
+      23712,
+      52608,
+      97680,
+      160512,
+      243648,
+      333568,
+      400512,
+      434976,
+      437184,
+      386688,
+      289536,
+      185856,
+      95232,
+      30720,
+      4096
+    ],
+    "formula_coefficients": [
+      0,
+      0,
+      6,
+      88,
+      600,
+      2640,
+      8784,
+      23712,
+      52608,
+      97680,
+      160512,
+      243648,
+      333568,
+      400512,
+      434976,
+      437184,
+      386688,
+      289536,
+      185856,
+      95232,
+      30720,
+      4096
+    ],
+    "rational_cases": [
+      {
+        "q": "0",
+        "cut": "1",
+        "cut_decimal": 1.0,
+        "isolated_triangle": "0",
+        "triangle_decimal": 0.0
+      },
+      {
+        "q": "13/100",
+        "cut": "24661995181/125000000000",
+        "cut_decimal": 0.197295961448,
+        "isolated_triangle": "1191722618663640137183681/312500000000000000000000000",
+        "triangle_decimal": 0.0038135123797236486
+      },
+      {
+        "q": "1/3",
+        "cut": "5/81",
+        "cut_decimal": 0.06172839506172839,
+        "isolated_triangle": "2/6561",
+        "triangle_decimal": 0.00030483158055174517
+      },
+      {
+        "q": "1/2",
+        "cut": "1/8",
+        "cut_decimal": 0.125,
+        "isolated_triangle": "1/512",
+        "triangle_decimal": 0.001953125
+      }
+    ],
+    "asymmetric_pi": {
+      "X": "1/5",
+      "Y": "3/10",
+      "Z": "1/2"
+    },
+    "asymmetric_direct": "6476/9765625",
+    "asymmetric_formula": "6476/9765625"
+  },
+  "finite_forms": {
+    "alternating_forms": 715,
+    "reachable_states_total": 26980,
+    "maximum_word_from_every_state_checks": 26980,
+    "component_factorization_checks": 715,
+    "C4": {
+      "omega": [
+        6,
+        9,
+        9,
+        6
+      ],
+      "rstar": 3,
+      "independence_number": 2
+    },
+    "K4_outside_spatial_model": {
+      "rstar": 1,
+      "a": 2,
+      "edges": 6
+    },
+    "same_n_rank_edge_count_different_rstar": [
+      {
+        "n_a_edges": [
+          5,
+          1,
+          3
+        ],
+        "examples": [
+          {
+            "omega": [
+              6,
+              5,
+              3,
+              0,
+              0
+            ],
+            "rstar": 3,
+            "reachable_states": 16,
+            "maximum_word": [
+              0,
+              3,
+              4
+            ],
+            "bandwidth_two": true
+          },
+          {
+            "omega": [
+              4,
+              4,
+              19,
+              0,
+              4
+            ],
+            "rstar": 4,
+            "reachable_states": 32,
+            "maximum_word": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "bandwidth_two": true
+          }
+        ]
+      }
+    ],
+    "all_matched_classes_count": 10
+  },
+  "status": "PASS",
+  "elapsed_seconds": 0.3580757919989992,
+  "protected_after": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597"
+  },
+  "random_samples": 0,
+  "QPU_jobs": 0
+}

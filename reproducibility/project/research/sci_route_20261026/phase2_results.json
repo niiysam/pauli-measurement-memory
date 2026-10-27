@@ -1,0 +1,6003 @@
+{
+  "status": "NO_COUNTEREXAMPLE_IN_FROZEN_SET",
+  "plan": {
+    "round": 2,
+    "date": "2026-10-26",
+    "claim_under_test": "For every connected bandwidth-two alternating generator graph, delta=n-rank(Omega)/2-Rstar<=1",
+    "status_before": "UNPROVED working conjecture; no novelty claim",
+    "stage_A": "All connected labeled bandwidth-two graphs of n=1..6 in increasing n and increasing edge-bit code; reuse prior reachable() implementation and exact group definitions",
+    "stage_A_stop": "Stop primary search at first exact counterexample, preserving all preceding cases and the counterexample",
+    "stage_B_if_no_counterexample": "Only two preselected graphs: three and four triangles joined successively at articulation vertices, n=7,9. No additional families or sizes",
+    "positive_controls": "Bipartite graphs have Rstar=n-a by measuring all of one part then all of the other; compare witnesses exactly",
+    "negative_control": "K5 is outside bandwidth-two family and has Rstar=1,a=2,delta=2. This disproves any unrestricted connected-graph version",
+    "independent_counterexample_check": "If a primary counterexample occurs, realize the same alternating form with independent canonical Pauli generators, and exhaust all reachable spaces using the physical symplectic implementation; do not claim the canonical embedding is the original geometric model",
+    "maximum_qubits_for_algebraic_embedding": 14,
+    "maximum_states_per_graph": 20000,
+    "wall_time_cap_seconds": 120,
+    "statistics": "Exact deterministic enumeration only; no fitted parameters, p-values, production trajectories or QPU",
+    "report_standard": "If no counterexample, say verified only in this finite set, not proved generally; do not require a PRL-level result but do not disguise known graph algebra as original physics",
+    "preserve": "Prior results, frozen plans, old code and all historical data remain read-only"
+  },
+  "counts_by_n": {
+    "1": 1,
+    "2": 1,
+    "3": 4,
+    "4": 14,
+    "5": 48,
+    "6": 164
+  },
+  "primary_records": [
+    {
+      "n": 1,
+      "omega": [
+        0
+      ],
+      "a": 0,
+      "rstar": 1,
+      "delta": 0,
+      "states": 2,
+      "word": [
+        0
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0
+      ],
+      "edge_bit_code": 0
+    },
+    {
+      "n": 2,
+      "omega": [
+        2,
+        1
+      ],
+      "a": 1,
+      "rstar": 1,
+      "delta": 0,
+      "states": 3,
+      "word": [
+        0
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1
+      ],
+      "edge_bit_code": 1
+    },
+    {
+      "n": 3,
+      "omega": [
+        6,
+        1,
+        1
+      ],
+      "a": 1,
+      "rstar": 2,
+      "delta": 0,
+      "states": 6,
+      "word": [
+        1,
+        2
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        2
+      ],
+      "edge_bit_code": 3
+    },
+    {
+      "n": 3,
+      "omega": [
+        2,
+        5,
+        2
+      ],
+      "a": 1,
+      "rstar": 2,
+      "delta": 0,
+      "states": 6,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        1
+      ],
+      "edge_bit_code": 5
+    },
+    {
+      "n": 3,
+      "omega": [
+        4,
+        4,
+        3
+      ],
+      "a": 1,
+      "rstar": 2,
+      "delta": 0,
+      "states": 6,
+      "word": [
+        0,
+        1
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        2
+      ],
+      "edge_bit_code": 6
+    },
+    {
+      "n": 3,
+      "omega": [
+        6,
+        5,
+        3
+      ],
+      "a": 1,
+      "rstar": 1,
+      "delta": 1,
+      "states": 4,
+      "word": [
+        0
+      ],
+      "connected": true,
+      "edge_bit_code": 7
+    },
+    {
+      "n": 4,
+      "omega": [
+        6,
+        9,
+        1,
+        2
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 10,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "edge_bit_code": 11
+    },
+    {
+      "n": 4,
+      "omega": [
+        2,
+        13,
+        2,
+        2
+      ],
+      "a": 1,
+      "rstar": 3,
+      "delta": 0,
+      "states": 16,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1
+      ],
+      "edge_bit_code": 13
+    },
+    {
+      "n": 4,
+      "omega": [
+        4,
+        12,
+        3,
+        2
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 10,
+      "word": [
+        0,
+        1
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "edge_bit_code": 14
+    },
+    {
+      "n": 4,
+      "omega": [
+        6,
+        13,
+        3,
+        2
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 11,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 15
+    },
+    {
+      "n": 4,
+      "omega": [
+        6,
+        1,
+        9,
+        4
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 10,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "edge_bit_code": 19
+    },
+    {
+      "n": 4,
+      "omega": [
+        2,
+        5,
+        10,
+        4
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 10,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "edge_bit_code": 21
+    },
+    {
+      "n": 4,
+      "omega": [
+        4,
+        4,
+        11,
+        4
+      ],
+      "a": 1,
+      "rstar": 3,
+      "delta": 0,
+      "states": 16,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "edge_bit_code": 22
+    },
+    {
+      "n": 4,
+      "omega": [
+        6,
+        5,
+        11,
+        4
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 11,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 23
+    },
+    {
+      "n": 4,
+      "omega": [
+        2,
+        9,
+        8,
+        6
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 10,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "edge_bit_code": 25
+    },
+    {
+      "n": 4,
+      "omega": [
+        4,
+        8,
+        9,
+        6
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 10,
+      "word": [
+        0,
+        1
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "edge_bit_code": 26
+    },
+    {
+      "n": 4,
+      "omega": [
+        6,
+        9,
+        9,
+        6
+      ],
+      "a": 1,
+      "rstar": 3,
+      "delta": 0,
+      "states": 13,
+      "word": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "edge_bit_code": 27
+    },
+    {
+      "n": 4,
+      "omega": [
+        2,
+        13,
+        10,
+        6
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 11,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "edge_bit_code": 29
+    },
+    {
+      "n": 4,
+      "omega": [
+        4,
+        12,
+        11,
+        6
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 0,
+      "states": 11,
+      "word": [
+        0,
+        1
+      ],
+      "connected": true,
+      "edge_bit_code": 30
+    },
+    {
+      "n": 4,
+      "omega": [
+        6,
+        13,
+        11,
+        6
+      ],
+      "a": 1,
+      "rstar": 2,
+      "delta": 1,
+      "states": 8,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 31
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        9,
+        17,
+        2,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "edge_bit_code": 43
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        13,
+        18,
+        2,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "edge_bit_code": 45
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        12,
+        19,
+        2,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "edge_bit_code": 46
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        13,
+        19,
+        2,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 27,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 47
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        1,
+        25,
+        4,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "edge_bit_code": 51
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        5,
+        26,
+        4,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        1,
+        3,
+        4
+      ],
+      "edge_bit_code": 53
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        4,
+        27,
+        4,
+        4
+      ],
+      "a": 1,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        4,
+        2
+      ],
+      "edge_bit_code": 54
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        5,
+        27,
+        4,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 32,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 55
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        9,
+        24,
+        6,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "edge_bit_code": 57
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        8,
+        25,
+        6,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "edge_bit_code": 58
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        9,
+        25,
+        6,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 26,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2
+      ],
+      "edge_bit_code": 59
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        13,
+        26,
+        6,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 27,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 61
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        12,
+        27,
+        6,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 32,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 62
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        13,
+        27,
+        6,
+        4
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 33,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 63
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        9,
+        1,
+        18,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 75
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        13,
+        2,
+        18,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "edge_bit_code": 77
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        12,
+        3,
+        18,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "edge_bit_code": 78
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        13,
+        3,
+        18,
+        8
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 79
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        1,
+        9,
+        20,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 83
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        5,
+        10,
+        20,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      "edge_bit_code": 85
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        4,
+        11,
+        20,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      "edge_bit_code": 86
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        5,
+        11,
+        20,
+        8
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 87
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        9,
+        8,
+        22,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 89
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        8,
+        9,
+        22,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 90
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        9,
+        9,
+        22,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 26,
+      "word": [
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 91
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        13,
+        10,
+        22,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 27,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 93
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        12,
+        11,
+        22,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 27,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 94
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        13,
+        11,
+        22,
+        8
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 17,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 95
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        1,
+        17,
+        16,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        1,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        4,
+        1,
+        2,
+        3
+      ],
+      "edge_bit_code": 99
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        5,
+        18,
+        16,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "edge_bit_code": 101
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        4,
+        19,
+        16,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 25,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "edge_bit_code": 102
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        5,
+        19,
+        16,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 103
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        9,
+        16,
+        18,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "edge_bit_code": 105
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        8,
+        17,
+        18,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 20,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "edge_bit_code": 106
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        9,
+        17,
+        18,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 107
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        13,
+        18,
+        18,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 26,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4
+      ],
+      "edge_bit_code": 109
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        12,
+        19,
+        18,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 26,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3
+      ],
+      "edge_bit_code": 110
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        13,
+        19,
+        18,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 28,
+      "word": [
+        1,
+        4,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 111
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        1,
+        25,
+        20,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 115
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        5,
+        26,
+        20,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "edge_bit_code": 117
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        4,
+        27,
+        20,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 32,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 118
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        5,
+        27,
+        20,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 28,
+      "word": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 119
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        9,
+        24,
+        22,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 16,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "edge_bit_code": 121
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        8,
+        25,
+        22,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 27,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 122
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        9,
+        25,
+        22,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 28,
+      "word": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "connected": true,
+      "edge_bit_code": 123
+    },
+    {
+      "n": 5,
+      "omega": [
+        2,
+        13,
+        26,
+        22,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 17,
+      "word": [
+        0,
+        2
+      ],
+      "connected": true,
+      "edge_bit_code": 125
+    },
+    {
+      "n": 5,
+      "omega": [
+        4,
+        12,
+        27,
+        22,
+        12
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 0,
+      "states": 33,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 126
+    },
+    {
+      "n": 5,
+      "omega": [
+        6,
+        13,
+        27,
+        22,
+        12
+      ],
+      "a": 2,
+      "rstar": 2,
+      "delta": 1,
+      "states": 18,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 127
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        17,
+        34,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 171
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        18,
+        34,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "edge_bit_code": 173
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        19,
+        34,
+        4,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "edge_bit_code": 174
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        19,
+        34,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 175
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        25,
+        36,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 179
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        26,
+        36,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        5,
+        1,
+        3,
+        4
+      ],
+      "edge_bit_code": 181
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        27,
+        36,
+        4,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 78,
+      "word": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "edge_bit_code": 182
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        27,
+        36,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 183
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        24,
+        38,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 185
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        25,
+        38,
+        4,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 62,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 186
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        25,
+        38,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 50,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 187
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        26,
+        38,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 189
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        27,
+        38,
+        4,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 95,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 190
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        27,
+        38,
+        4,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 64,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 191
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        1,
+        50,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "edge_bit_code": 203
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        2,
+        50,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 62,
+      "word": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "edge_bit_code": 205
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        3,
+        50,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "edge_bit_code": 206
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        3,
+        50,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 38,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 207
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        9,
+        52,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "edge_bit_code": 211
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        10,
+        52,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        4,
+        5,
+        1,
+        3
+      ],
+      "edge_bit_code": 213
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        11,
+        52,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 62,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ],
+      "edge_bit_code": 214
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        11,
+        52,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 38,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 215
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        8,
+        54,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 78,
+      "word": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "edge_bit_code": 217
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        9,
+        54,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 78,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "edge_bit_code": 218
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        9,
+        54,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 81,
+      "word": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        5
+      ],
+      "edge_bit_code": 219
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        10,
+        54,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 95,
+      "word": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 221
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        11,
+        54,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 95,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 222
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        11,
+        54,
+        8,
+        8
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 46,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 223
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        17,
+        48,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        4,
+        5,
+        1,
+        2,
+        3
+      ],
+      "edge_bit_code": 227
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        18,
+        48,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "edge_bit_code": 229
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        19,
+        48,
+        12,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "edge_bit_code": 230
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        19,
+        48,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 231
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        16,
+        50,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "edge_bit_code": 233
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        17,
+        50,
+        12,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "edge_bit_code": 234
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        17,
+        50,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 73,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 235
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        18,
+        50,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 50,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        1,
+        4,
+        5
+      ],
+      "edge_bit_code": 237
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        19,
+        50,
+        12,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 70,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "edge_bit_code": 238
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        19,
+        50,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 69,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 239
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        25,
+        52,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 243
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        26,
+        52,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 245
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        27,
+        52,
+        12,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 95,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 246
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        27,
+        52,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 57,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 247
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        24,
+        54,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 249
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        25,
+        54,
+        12,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 95,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 250
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        25,
+        54,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 70,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 251
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        26,
+        54,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 64,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 253
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        27,
+        54,
+        12,
+        8
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 110,
+      "word": [
+        0,
+        1,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 254
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        27,
+        54,
+        12,
+        8
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 78,
+      "word": [
+        0,
+        4,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 255
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        17,
+        2,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 299
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        18,
+        2,
+        36,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      "edge_bit_code": 301
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        19,
+        2,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "edge_bit_code": 302
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        19,
+        2,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 303
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        25,
+        4,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 307
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        26,
+        4,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        5,
+        1,
+        3,
+        4
+      ],
+      "edge_bit_code": 309
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        27,
+        4,
+        36,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 78,
+      "word": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "edge_bit_code": 310
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        27,
+        4,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 311
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        24,
+        6,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 313
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        25,
+        6,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 314
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        25,
+        6,
+        36,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        0,
+        3,
+        1,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 315
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        26,
+        6,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 317
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        27,
+        6,
+        36,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 318
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        27,
+        6,
+        36,
+        16
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 45,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 319
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        1,
+        18,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 331
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        2,
+        18,
+        40,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      "edge_bit_code": 333
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        3,
+        18,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "edge_bit_code": 334
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        3,
+        18,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 335
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        9,
+        20,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 339
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        10,
+        20,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        4,
+        1,
+        3,
+        5
+      ],
+      "edge_bit_code": 341
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        11,
+        20,
+        40,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        5,
+        2,
+        4
+      ],
+      "edge_bit_code": 342
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        11,
+        20,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 343
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        8,
+        22,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 345
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        9,
+        22,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 346
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        9,
+        22,
+        40,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        0,
+        3,
+        1,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        5,
+        1,
+        2,
+        4
+      ],
+      "edge_bit_code": 347
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        10,
+        22,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 349
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        11,
+        22,
+        40,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 350
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        11,
+        22,
+        40,
+        16
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 34,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 351
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        17,
+        16,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        4,
+        1,
+        2,
+        3,
+        5
+      ],
+      "edge_bit_code": 355
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        18,
+        16,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      "edge_bit_code": 357
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        19,
+        16,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 62,
+      "word": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "edge_bit_code": 358
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        19,
+        16,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 38,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 359
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        16,
+        18,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      "edge_bit_code": 361
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        17,
+        18,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "edge_bit_code": 362
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        17,
+        18,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 73,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 363
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        18,
+        18,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 70,
+      "word": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        5,
+        1,
+        4
+      ],
+      "edge_bit_code": 365
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        19,
+        18,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 50,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "edge_bit_code": 366
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        19,
+        18,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 69,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 367
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        25,
+        20,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 371
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        26,
+        20,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 373
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        27,
+        20,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 95,
+      "word": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 374
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        27,
+        20,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 57,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 375
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        24,
+        22,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 377
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        25,
+        22,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 378
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        25,
+        22,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 103,
+      "word": [
+        0,
+        3,
+        1,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 379
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        26,
+        22,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 51,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 381
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        27,
+        22,
+        44,
+        16
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 64,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 382
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        27,
+        22,
+        44,
+        16
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 48,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 383
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        1,
+        34,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 395
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        2,
+        34,
+        32,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        3,
+        4,
+        1,
+        5
+      ],
+      "edge_bit_code": 397
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        3,
+        34,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        5,
+        2,
+        3,
+        4
+      ],
+      "edge_bit_code": 398
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        3,
+        34,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 399
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        9,
+        36,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 403
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        10,
+        36,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        5,
+        1,
+        3,
+        4
+      ],
+      "edge_bit_code": 405
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        11,
+        36,
+        32,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "edge_bit_code": 406
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        11,
+        36,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 407
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        8,
+        38,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 409
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        9,
+        38,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 410
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        9,
+        38,
+        32,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        0,
+        3,
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 411
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        10,
+        38,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 413
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        11,
+        38,
+        32,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 414
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        11,
+        38,
+        32,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 34,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 415
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        17,
+        32,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 419
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        18,
+        32,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        5,
+        1,
+        3,
+        4
+      ],
+      "edge_bit_code": 421
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        19,
+        32,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 61,
+      "word": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "edge_bit_code": 422
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        19,
+        32,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 423
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        16,
+        34,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 425
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        17,
+        34,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 35,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 426
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        17,
+        34,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 47,
+      "word": [
+        0,
+        3,
+        1,
+        4,
+        2,
+        5
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 427
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        18,
+        34,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 73,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 429
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        19,
+        34,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 73,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 430
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        19,
+        34,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 46,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 431
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        25,
+        36,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 435
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        26,
+        36,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        0,
+        2,
+        5,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        2,
+        5,
+        1,
+        3,
+        4
+      ],
+      "edge_bit_code": 437
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        27,
+        36,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 81,
+      "word": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "edge_bit_code": 438
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        27,
+        36,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 45,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 439
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        24,
+        38,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 53,
+      "word": [
+        0,
+        2,
+        5,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 441
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        25,
+        38,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 50,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 442
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        25,
+        38,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 51,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "bipartite_exact_witness": [
+        0,
+        3,
+        4,
+        1,
+        2,
+        5
+      ],
+      "edge_bit_code": 443
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        26,
+        38,
+        36,
+        24
+      ],
+      "a": 2,
+      "rstar": 4,
+      "delta": 0,
+      "states": 103,
+      "word": [
+        0,
+        2,
+        5,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 445
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        27,
+        38,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 70,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 446
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        27,
+        38,
+        36,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 77,
+      "word": [
+        0,
+        3,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 447
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        1,
+        50,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 459
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        2,
+        50,
+        40,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 38,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 461
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        3,
+        50,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 462
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        3,
+        50,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 2,
+      "delta": 1,
+      "states": 23,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 463
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        9,
+        52,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 467
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        10,
+        52,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 469
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        11,
+        52,
+        40,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 38,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 470
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        11,
+        52,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 2,
+      "delta": 1,
+      "states": 23,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 471
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        8,
+        54,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 473
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        9,
+        54,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 56,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 474
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        9,
+        54,
+        40,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 45,
+      "word": [
+        1,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 475
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        10,
+        54,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 57,
+      "word": [
+        0,
+        2,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 477
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        11,
+        54,
+        40,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 57,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 478
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        11,
+        54,
+        40,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 41,
+      "word": [
+        1,
+        4,
+        3,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 479
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        17,
+        48,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        1,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 483
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        18,
+        48,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 42,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 485
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        19,
+        48,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 38,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 486
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        19,
+        48,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 2,
+      "delta": 1,
+      "states": 23,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 487
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        16,
+        50,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 489
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        17,
+        50,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 49,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 490
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        17,
+        50,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 46,
+      "word": [
+        1,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 491
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        18,
+        50,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 69,
+      "word": [
+        0,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 493
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        19,
+        50,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 69,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 494
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        19,
+        50,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 47,
+      "word": [
+        1,
+        4,
+        2,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 495
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        1,
+        25,
+        52,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 34,
+      "word": [
+        1,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 499
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        5,
+        26,
+        52,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 34,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 501
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        4,
+        27,
+        52,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 46,
+      "word": [
+        0,
+        1,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 502
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        5,
+        27,
+        52,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 41,
+      "word": [
+        0,
+        3,
+        2,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 503
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        9,
+        24,
+        54,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 45,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 505
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        8,
+        25,
+        54,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 64,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 506
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        9,
+        25,
+        54,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 77,
+      "word": [
+        1,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 507
+    },
+    {
+      "n": 6,
+      "omega": [
+        2,
+        13,
+        26,
+        54,
+        44,
+        24
+      ],
+      "a": 2,
+      "rstar": 3,
+      "delta": 1,
+      "states": 48,
+      "word": [
+        0,
+        2,
+        5
+      ],
+      "connected": true,
+      "edge_bit_code": 509
+    },
+    {
+      "n": 6,
+      "omega": [
+        4,
+        12,
+        27,
+        54,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 0,
+      "states": 78,
+      "word": [
+        0,
+        1,
+        4
+      ],
+      "connected": true,
+      "edge_bit_code": 510
+    },
+    {
+      "n": 6,
+      "omega": [
+        6,
+        13,
+        27,
+        54,
+        44,
+        24
+      ],
+      "a": 3,
+      "rstar": 2,
+      "delta": 1,
+      "states": 31,
+      "word": [
+        0,
+        3
+      ],
+      "connected": true,
+      "edge_bit_code": 511
+    }
+  ],
+  "targeted_records": [
+    {
+      "n": 7,
+      "omega": [
+        6,
+        5,
+        27,
+        20,
+        108,
+        80,
+        48
+      ],
+      "a": 3,
+      "rstar": 3,
+      "delta": 1,
+      "states": 104,
+      "word": [
+        0,
+        3,
+        5
+      ],
+      "connected": true,
+      "family": "articulation_triangle_chain"
+    },
+    {
+      "n": 9,
+      "omega": [
+        6,
+        5,
+        27,
+        20,
+        108,
+        80,
+        432,
+        320,
+        192
+      ],
+      "a": 4,
+      "rstar": 5,
+      "delta": 0,
+      "states": 1144,
+      "word": [
+        0,
+        3,
+        2,
+        1,
+        4,
+        7,
+        6,
+        5,
+        8
+      ],
+      "connected": true,
+      "family": "articulation_triangle_chain"
+    }
+  ],
+  "counterexample": null,
+  "independent_validation": null,
+  "K5_outside_family": {
+    "n": 5,
+    "omega": [
+      30,
+      29,
+      27,
+      23,
+      15
+    ],
+    "a": 2,
+    "rstar": 1,
+    "delta": 2,
+    "states": 6,
+    "word": [
+      0
+    ],
+    "connected": true
+  },
+  "elapsed_seconds": 0.0812210000003688,
+  "protected_before": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664"
+  },
+  "protected_after": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664"
+  },
+  "production_trajectories": 0,
+  "QPU_jobs": 0
+}

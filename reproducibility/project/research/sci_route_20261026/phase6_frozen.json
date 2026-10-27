@@ -1,0 +1,23 @@
+{
+  "round": 6,
+  "date": "2026-10-26",
+  "authorization": "User requests further theoretical results. One bounded manual analytic extension in the existing c-family; previous external review remains pending, timer stays PAUSED.",
+  "primary_question": "Can initial zero-anticommutation cuts that receive no refresh protect a rigorous, uniform-in-size transient area law for c<1, beyond a global-no-refresh coupling?",
+  "primary_candidate": {
+    "model": "Unchanged periodic length L, per-label hold c and independent stationary initial labels pi; uniform independent anchors, update-before-measure. Pure product input. No feedback, unitaries, noise or postselection.",
+    "definition": "b=1-c^3 is the probability at least one of the three controller labels uses its refresh branch at an event, even if the new draw equals the old label. Candidate cut uses four anchor words. A protected cut is initially zero-edge and has no refresh branch at those four anchors before event t.",
+    "proposed_probability": "p_t=rho*(1-4*b/L)^t. For m disjoint candidate windows on one side, P(no protected cut)<= (1-p_t)^m. Must prove despite multinomial dependence; do not assume independence.",
+    "proposed_entropy_bound": "For even L>=32, m=floor(L/16)-1: E sup_{u<=t} S_half(u)<=8/p_t-4+2*L*(1-p_t)^m. Average over actual classical histories, not a supremum over them. Supremum may be over nonzero quantum outcome branches.",
+    "physical_target": "A bound uniform in L for scaled time (1-c^3)*t/L<=K, with a window diverging as c approaches1. Cannot infer late-time phases at fixed c or apply to the old c=.6 long-time data.",
+    "negative_controls": "Compare against universal crossing-projector rank bound E sup S<=4*t/L and global-no-refresh probability c^(3*t). Do not call an always-weaker bound a predictive gain. At c=1 recover old theorem. If multinomial product inequality reverses or cut does not separate the entire history, stop or report failure."
+  },
+  "secondary_candidate": "For finite L>=3 and any two positive Pauli species, c<1 permits all L independent commuting cluster words A_j B_{j+1} A_{j+2}. Check rank1 purification word and a uniform positive occurrence bound from arbitrary controller memory. Label known finite-word purification machinery separately from any model-specific result; distinguish finite-time, finite-size and thermodynamic limits.",
+  "verification_before_calculation": {
+    "classical_exact": "At most four fixed cases m<=3, t<=3 with rational rho and refresh-event category probabilities; enumerate occupancy categories and initial cut bits, not quantum trajectories. Include a case disproving naive independence of surviving cuts.",
+    "quantum_algebra": "Check the analytic cluster-generator construction for L=3,4,6 using GF(2) independence/commutation and the existing projection update; one existing independent Stim check of L6 Bell-reference entropy. No generic simulator tests or full state-space enumeration.",
+    "resource_cap": "New finite quantum embedding L<=6; no production, parameter scans, MC, new physical models or hardware. Analytic and exact checks expected below120 seconds, hard cap120 seconds per check script.",
+    "statistics": "No statistical hypothesis tests or independent trajectory claims; all new checks exact/rational or deterministic fixtures. Preserve zero-probability branches and failures."
+  },
+  "literature": "Use original texts for negative association and the closest purification/fragmentation results. At most three newly inspected full primary papers; prior Placke/Ippoliti/finite-instrument texts may be reused. Search misses do not establish novelty.",
+  "stop": "Complete actual proof or counterexample, compare against the negative controls and nearest prior art, update the single MASTER and progress once. No manuscript, automatic next research stage, automated outreach or QPU. Preserve old reports, data, frozen plans and code with hashes/snapshots."
+}

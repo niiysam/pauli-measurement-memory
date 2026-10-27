@@ -1,0 +1,40 @@
+{
+  "status": "FROZEN_BEFORE_ANY_NEW_QPU_RESULT",
+  "science_coordinates": 23,
+  "N_per_coordinate": 1024,
+  "alpha": 0.05,
+  "coordinate_bounds": "Yi in [-1,1]; r=2sqrt(log(2J/alpha)/(2N))",
+  "coordinate_radius": 0.1154506596962655,
+  "primary": "D=(sum EchoW -0.5 sum BELL0W -0.5 sum IDLEW)/4",
+  "primary_simultaneous_half_width": 0.17317598954439825,
+  "primary_test": "lowerD>0 and lower(BELL0-IDLE)>0 supports >half nominal waiting-loss recovery for implemented protocol; upperD<0 with same baseline criterion rejects; otherwise unresolved",
+  "conditional_martingale_proof": "For predictable fixed setting labels and fixed N, Hoeffding lemma bounds E[exp(t(Y_i-E[Y_i|past]))|past] <= exp(t*t*(2**2)/8). Iterated products, Chernoff tails and union over 23 coordinates give probability>=.95 all realized average conditional expectations fall in intervals. No iid or block independence assumed. This is not a common-state fidelity theorem.",
+  "linear_intervals": "constant + linear coordinates; radius r sum absolute weights; no clipping or fitted phase",
+  "auxiliaries": [
+    "ECHO-IDLE",
+    "P5-ECHO",
+    "BELL0-IDLE",
+    "all8phase axes",
+    "all4rawblock summaries",
+    "SEP0 nominal score and CAL4 descriptive checks"
+  ],
+  "scope_of_auxiliary_intervals": "All linear forms of the same23 science coordinates share the simultaneous coordinate event; no extra multiplicity from reporting them. CAL descriptive only.",
+  "drift_and_SPAM": "Report settings at their actual event times. No common state/axis invariance, quantum fidelity, or mechanism causation asserted without external assumptions. Four jobs not presumed independent.",
+  "blocks": 4,
+  "shots_per_setting_per_block": 256,
+  "fixed_total_shots": 27648,
+  "no_selection": [
+    "no postselection",
+    "no early science-peeking stop",
+    "no shots added",
+    "no alternate pulse sequence",
+    "no time sweep",
+    "no posthoc phase optimization",
+    "no merge with old8 or new49 primary",
+    "no calibration inversion"
+  ],
+  "missing_data": "If a job fails or any setting lacks256 complete9bitshots, stop primary as incomplete. Preserve all returned records. Never rerun unknown job or remove locks.",
+  "deviations": "Only pre-result audited implementation corrections with original versions and failure logs; no changing physics/statistics based on outcomes.",
+  "reader": "analyze_echo27.py",
+  "reader_sha256": "9e9ab2e74eb16f0589c1ca0a259f9e888a3edf13ebd65f160b7ed97e14df7ec9"
+}

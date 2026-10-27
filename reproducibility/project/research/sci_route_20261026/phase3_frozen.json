@@ -1,0 +1,16 @@
+{
+  "round": 3,
+  "date": "2026-10-26",
+  "claim_under_test": "Every algebraically independent connected block of the original frozen three-body Pauli ensemble with delta>0 admits a generator-by-generator independent Majorana-bilinear representation",
+  "scope": "Reuse only the 232 connected n<=6 graph records and their already-computed Rstar in phase2_results.json; do not resimulate stabilizer dynamics for graph classification",
+  "classification": "Exact edge partition into cliques with each graph vertex in at most two cliques. Enumerate all such partitions to decide existence of a simple root graph. Independently check root-edge incidence rank to decide whether any representation is algebraically independent (root forest).",
+  "controls_before_results": ["K3 is a line graph of a star tree", "K1,3 has no line-graph root", "C4 is a line graph but its simple root has a cycle and dependent bilinears"],
+  "selection": "Sort by n then original edge_bit_code. Select the first delta>0 graph without any line-graph root, if there is one; otherwise select the first delta>0 line graph lacking an independent root forest. Select at most ONE graph for geometric realization.",
+  "interpretation": "Failure of independent bilinear representation does not by itself exclude sectorwise free-fermion descriptions or establish novelty. An induced claw is a direct sufficient obstruction to any generator-by-generator bilinear representation, independently of the recognition implementation.",
+  "geometric_realization": "Only selected graph; L=n+4<=10, block anchors2..n+1, four guards0,1,L-2,L-1; no cross edges and guards have only edges(0,L-2),(0,L-1). Fix every first letter X; set third letter X/Y by the distance-two target edge. Solve middle letters with an exact three-state cyclic transfer constraint. Choose lexicographically first feasible middle-letter sequence, no outcome-based selection. If none exists, report failure and stop, do not try a second graph or change target.",
+  "physical_validation_if_feasible": "Freeze explicit words and predicted a/Rstar before enumeration. Verify graph and full GF2 rank; enumerate physical reachable unsigned groups up to20000 states and compare additive Rstar with stored block result. Check all signed-engine/Stim branches of only the maximum-rank witness, at most128 branches.",
+  "cost_cap": {"classification_seconds": 30, "physical_seconds": 120, "max_clique_partitions_per_graph": 20000, "physical_L": 14, "new_production_trajectories": 0, "QPU_jobs": 0},
+  "literature": "Read at most three directly relevant primary papers; prioritize Chapman2022, Ippoliti2021 and existing Majorana2023, distinguish line-graph obstruction from standard non-Gaussian measurement theory. No lack-of-search-hit novelty claim.",
+  "stop": "After this one coverage test. If only a known non-Gaussian example or routine count improvement is obtained, with no nontrivial capacity theorem or physical quantitative advance, pause the frozen-endpoint SCI branch instead of adding graph sizes or production.",
+  "preserve": "Old reports, raw data, code, tests, failed conjectures and frozen plans remain unchanged. Save round2 handoff snapshot before updating active MASTER/progress. No parameter scans, QPU/account access, subagents or manuscript drafting."
+}

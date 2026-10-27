@@ -1,0 +1,21 @@
+{
+  "round": 1,
+  "date": "2026-10-26",
+  "scope": "Theoretical audit and finite exact counting at frozen c=1 only; no production trajectories",
+  "prior_result_under_attack": "S_mix-k_static >= N-r for isolated K3 graph components, with global kernel r<=2",
+  "cut_prediction": "rho=u3^2+(u2-u3)^2; uniform pi gives 5/81",
+  "improved_triangle_prediction": "p_iso=6*piX*piY*piZ*u3^4+2*u3^2*(u2-u3)^3; uniform pi gives 2/6561",
+  "methods": ["Pauli-commutator enumeration of 729 cut label assignments", "exact polynomial weighted counting of all 27^3 triangle choices and independently summed boundary operators", "one asymmetric rational distribution cross-check", "all bandwidth-two alternating matrices of orders 1 through 6 plus all alternating matrices of order 4"],
+  "finite_block_predictions": ["one maximum-rank witness word drives every reachable state to maximum rank", "maximum reachable rank adds over graph components", "maximum independent set is not sufficient: C4 has alpha=2 but reachable rank=3"],
+  "max_quantum_L": 9,
+  "max_formal_generators": 6,
+  "maximum_states_per_exact_graph": 20000,
+  "wall_time_cap_seconds": 120,
+  "random_samples": 0,
+  "hardware_access": false,
+  "stop_on_mismatch": true,
+  "statistics": "Exact identities; no p-values, trajectory inference or significance selection",
+  "novelty_status_before": "UNVERIFIED; graph reduction, subsystem counts and inaccessible centers are known; do not equate exact counting with new physics",
+  "theory_output": "Derive finite-block entropy-density representation only if dependencies and endpoint limits can be controlled; report computability separately from numerical practicality",
+  "preservation": "Old data, scripts, frozen configurations and prior exact results remain unchanged"
+}

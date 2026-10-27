@@ -1,0 +1,12 @@
+{
+  "round": 5,
+  "date": "2026-10-26",
+  "type": "Additional adversarial arithmetic check, frozen before execution; not a change to phase5_frozen.json",
+  "trigger": "Reading Huang v3 II Eq3-4 requires distinguishing I(E_W mu_W) from E_W I(mu_W) at c=1. Existing src/ensemble.py defines the former iid reference, not the conditional frozen ensemble.",
+  "claim": "For L>=6, J_ann=L I(mu_ann)=A3+2 A2+2 A1, E_W[J_que]=2 A2+2 A1. Their difference is A3, where A_l=(1-(1-2D)^l)/2 and D=1-sum pi_a^2.",
+  "counterexample_scope": "Exact rational fixtures q=13/100 and 1/3; q=0 is the commuting negative control. Enumerate only the 27-by-27 same-anchor word pairs to check the missing diagonal contribution. No graph or quantum-state enumeration.",
+  "geometry": "Write L=16k+s with even s in 0..14 and k>=2. Check the two-boundary enclosure separation symbolically; residue arithmetic is not a scan over quantum systems.",
+  "cost_cap_seconds": 30,
+  "stop": "Record all arithmetic, including a failed identity if any. Do not alter old static-index formulas or finite-c comparisons. Do not tune q to manufacture equal-index phase examples. No new production, trajectories, simulation, parameter scan or hardware. No manuscript.",
+  "novelty": "An ensemble-conditioning correction using a published definition, not an original physical mechanism or a refutation of Huang's homogeneous iid model."
+}

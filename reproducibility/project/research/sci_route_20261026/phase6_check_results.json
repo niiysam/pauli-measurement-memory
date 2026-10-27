@@ -1,0 +1,343 @@
+{
+  "round": 6,
+  "status": "FIXED_EXACT_CHECKS_PASS",
+  "plan": {
+    "round": 6,
+    "date": "2026-10-26",
+    "purpose": "Fix exact fixtures before executing the new claim-specific checks; no simulation scan",
+    "occupancy_fixtures": [
+      {
+        "L": 64,
+        "m": 1,
+        "t": 0,
+        "c": "3/5",
+        "rho": "5/81"
+      },
+      {
+        "L": 64,
+        "m": 2,
+        "t": 1,
+        "c": "3/5",
+        "rho": "5/81"
+      },
+      {
+        "L": 64,
+        "m": 3,
+        "t": 3,
+        "c": "3/5",
+        "rho": "5/81"
+      },
+      {
+        "L": 64,
+        "m": 3,
+        "t": 3,
+        "c": "1",
+        "rho": "5/81"
+      }
+    ],
+    "expected": "Enumerated probability that all candidate cuts fail equals inclusion-exclusion sum_k (-1)^k choose(m,k) rho^k (1-4k(1-c^3)/L)^t and is at most the marginal product (1-rho(1-4(1-c^3)/L)^t)^m. Nontrivial refresh fixtures strictly violate independence, with negative two-cut covariance.",
+    "cluster_generators": {
+      "lengths": [
+        3,
+        4,
+        6
+      ],
+      "words": [
+        "ZXZ",
+        "XYX"
+      ],
+      "expected_rank": "L",
+      "expected_anticommutation": "all zero"
+    },
+    "specific_projection_check": "L6 ZXZ, witness anchors0..5. Reuse existing selected_branches and independent Stim Bell-reference machinery over all64 outcome strings, not a stochastic sample. After k events entropy6-k; final0. No old generic simulator test rerun.",
+    "comparison_fixtures": "q=.13, K=1/10, symbolic sequence b_L=L^-2, s_L=K L^2, t_L=K L^3; compare asymptotic surviving-cut bound to trivial half-chain bound and global-no-refresh probability analytically. A separate q=.13,c=.6,s8192 check is only a bound-vacuity calculation, not new dynamics/data.",
+    "limits": "At most120 seconds, system L<=6 plus Bell reference; occupancy L64 is a probability denominator only, no L64 quantum evolution; no MC/production/hardware. Preserve all results and failures."
+  },
+  "occupancy": [
+    {
+      "L": 64,
+      "m": 1,
+      "t": 0,
+      "c": "3/5",
+      "rho": "5/81",
+      "per_group_refresh_probability": "49/1000",
+      "protected_cut_probability": "5/81",
+      "all_fail_enumerated": "76/81",
+      "inclusion_exclusion": "76/81",
+      "product_upper": "76/81",
+      "inequality_slack": "0",
+      "covariance": null,
+      "elementary_outcomes": 2
+    },
+    {
+      "L": 64,
+      "m": 2,
+      "t": 1,
+      "c": "3/5",
+      "rho": "5/81",
+      "per_group_refresh_probability": "49/1000",
+      "protected_cut_probability": "317/5400",
+      "all_fail_enumerated": "145331/164025",
+      "inclusion_exclusion": "145331/164025",
+      "product_upper": "25836889/29160000",
+      "inequality_slack": "2401/262440000",
+      "covariance": "-2401/262440000",
+      "elementary_outcomes": 12
+    },
+    {
+      "L": 64,
+      "m": 3,
+      "t": 3,
+      "c": "3/5",
+      "rho": "5/81",
+      "per_group_refresh_probability": "49/1000",
+      "protected_cut_probability": "31855013/600000000",
+      "all_fail_enumerated": "45117638403031/53144100000000",
+      "inclusion_exclusion": "45117638403031/53144100000000",
+      "product_upper": "183390796680888013074512803/216000000000000000000000000",
+      "inequality_slack": "269978827438761345635501449/4251528000000000000000000000000",
+      "covariance": "-5876003004793201/262440000000000000000",
+      "elementary_outcomes": 512
+    },
+    {
+      "L": 64,
+      "m": 3,
+      "t": 3,
+      "c": "1",
+      "rho": "5/81",
+      "per_group_refresh_probability": "0",
+      "protected_cut_probability": "5/81",
+      "all_fail_enumerated": "438976/531441",
+      "inclusion_exclusion": "438976/531441",
+      "product_upper": "438976/531441",
+      "inequality_slack": "0",
+      "covariance": "0",
+      "elementary_outcomes": 512
+    }
+  ],
+  "cluster_generators": [
+    {
+      "L": 3,
+      "word": "ZXZ",
+      "commuting": true,
+      "rank": 3,
+      "conditional_entropy_by_event": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "L": 3,
+      "word": "XYX",
+      "commuting": true,
+      "rank": 3,
+      "conditional_entropy_by_event": [
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "L": 4,
+      "word": "ZXZ",
+      "commuting": true,
+      "rank": 4,
+      "conditional_entropy_by_event": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "L": 4,
+      "word": "XYX",
+      "commuting": true,
+      "rank": 4,
+      "conditional_entropy_by_event": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "L": 6,
+      "word": "ZXZ",
+      "commuting": true,
+      "rank": 6,
+      "conditional_entropy_by_event": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    },
+    {
+      "L": 6,
+      "word": "XYX",
+      "commuting": true,
+      "rank": 6,
+      "conditional_entropy_by_event": [
+        6,
+        5,
+        4,
+        3,
+        2,
+        1,
+        0
+      ]
+    }
+  ],
+  "independent_stim_specific_word": {
+    "branch_inputs": 64,
+    "checked_events": 384,
+    "final_entropies": [
+      0
+    ]
+  },
+  "comparison": {
+    "q": "13/100",
+    "rho": "24661995181/125000000000",
+    "K": "1/10",
+    "asymptotic_surviving_cut_bound": 56.49083566404215,
+    "b_sequence": "L^-2",
+    "sweeps": "K*L^2",
+    "events": "K*L^3",
+    "expected_refresh_branch_events": "K*L",
+    "universal_crossing_bound": "4*K*L^2, capped at L/2",
+    "global_no_refresh_probability": "(1-L^-2)^(K*L^3) ~ exp(-K*L) ->0",
+    "old_parameter_bound": {
+      "c": "3/5",
+      "sweeps": 8192,
+      "asymptotic_log_surviving_cut": -25691.735050335257,
+      "verdict": "VACUOUS for the old long-time c=.6 observations; no explanatory claim"
+    }
+  },
+  "elapsed_seconds": 0.04699091598740779,
+  "protected_before": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664",
+    "research/sci_route_20261026/phase2_exact.py": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7",
+    "research/sci_route_20261026/phase2_results.json": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+    "research/sci_route_20261026/phase2_frozen.json": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf",
+    "research/sci_route_20261026/phase2_counterexample.py": "28d628be57ef6bdc2b0816a01f3f262ab91369ad0aa901836a36e34f2759d375",
+    "research/sci_route_20261026/phase2_counterexample_frozen.json": "80ca0b3f716ac5ed317606b89a2a47b1ef6de191ef98dd5bd72efb65af63129c",
+    "research/sci_route_20261026/phase2_counterexample_results.json": "0a36e283c0d632a790793093fbd882c4875410010d20c6fb78ad62d24e3f8e57",
+    "research/sci_route_20261026/phase3_frozen.json": "89b37ce9652d19eb573ba594a4c4ace33c673af585f8025648d5de27bd65f5ec",
+    "research/sci_route_20261026/phase3_graphs.py": "6409328705d3950825c24451b0c0e6536204753f381bb2565c8e1dfbf16d59f7",
+    "research/sci_route_20261026/phase3_graph_results.json": "cac6bf53fb40d523f1d5e73b1a0040840136187b4abf7f935790bfacb1617282",
+    "research/sci_route_20261026/phase3_physical.py": "cae3ca1b8d70a522610c6c1deb2c065b87c8097c4667775fdc7a58b5301a41e4",
+    "research/sci_route_20261026/phase3_physical_frozen.json": "9e2339e3f29935bec3239c29c6019ef5bde3df6ec1ba898dfb5f3542409d1c01",
+    "research/sci_route_20261026/phase3_physical_results.json": "bb40b756a1181ae04688b496263e329c80b0ca94e5eff03023ecd751b798c31f",
+    "research/sci_route_20261026/phase3_quotient_audit.py": "6b497ab7d6af4a137abfac0d38ba33798c481d6853f08c16d1275473eea6db54",
+    "research/sci_route_20261026/phase3_quotient_audit_results.json": "a10be77babe6ea5e0ecd28104aaedc010c4dd1b1d671e1d93b7676b0423649f1",
+    "research/sci_route_20261026/phase4_frozen.json": "cdd02f5edff3fdcb82cb24ac4311ed801fb3ac1f9fe57ef66c7de9eccc27e1db",
+    "research/sci_route_20261026/phase4_validation_frozen.json": "a815a680d011cef92083dcadda73c1e166d700fe0e35956e50b96510afd1c11f",
+    "src/reference.py": "c8110eb5bf08f5c31f5638a5c96974576524889c0a197e1a5e4a32eb6e652ddc",
+    "research/sci_route_20261026/master_round3.md": "99305baea9afaf41f9a37848d7ab63432b766b425a7a4805997d680b219aa338",
+    "research/sci_route_20261026/progress_round3.json": "7f4f2e19e9ebb1cfd0993ae2e86eb9196cc473e3f985bddcfd397b9dfd53e33e",
+    "research/sci_route_20261026/automation_state_round3.json": "16eeca98584e7a21aed723160550a4abdb1e9e500a728189d5ea601d97033510",
+    "research/sci_route_20261026/phase4_validation.py": "44b74817a6f8d4b200b8f3005edb77172ebc9d16fbc7da61a41802835405b168",
+    "research/sci_route_20261026/phase4_validation_results.json": "2d19d348fa87a514f83b9d2fd583b49bee5707a5a10e489d803a19c4d3c42a51",
+    "research/sci_route_20261026/phase4_validation_run.log": "7656c1a1f4264588eda183f8073b356339be35363260649e89c213b13816293b",
+    "SCI_RESCUE_MASTER.md": "ca35c4e883c589e5b431631e352be9fa662d15b31145960af0912ed2aa25916f",
+    "research/sci_route_20261026/progress.json": "f57144e51917ac796b38142857082b98c02586d348a47e5fa638b76ce13e51a2",
+    "research/sci_route_20261026/automation_state.json": "e9461a94a57a60395a70615cb4dcc523a833c7f6a2931e4de46ecb693402a1f4",
+    "research/sci_route_20261026/master_round4.md": "3a60d83b8c2c84572647558efd8f9e792e56dbb91d2b0b3a69885d414c964473",
+    "research/sci_route_20261026/progress_round4.json": "0f814e2c1aa31a8f51f348cdd11f322de98d58c67e7f558e6f29dfd14f660f4b",
+    "research/sci_route_20261026/automation_state_round4.json": "a41e3eb84c4f06f3ca5bf683baf7d982480976fe96c5f4f98fe880557a486b87",
+    "research/sci_route_20261026/phase5_frozen.json": "953e891a34d2e564c33f4b188d3baa22cd5c42a360107ac1f19b2d1d082cea4d",
+    "research/sci_route_20261026/phase5_index_scope_frozen.json": "0c8622c33e509562171ffbd2c909cafb1403fc161caf72e65fa1edda8b8d351a",
+    "research/sci_route_20261026/phase5_arithmetic.py": "79d8fd423880c2d06f809fbd8327499f49b57390bbc55b447fa28340a0398113",
+    "research/sci_route_20261026/phase5_arithmetic_results.json": "2beda2f279cb89dda8a48f93ddf87f89ca184637e3d64b94a3082eb21a86b928",
+    "research/sci_route_20261026/phase5_sources/bravyi_vyalyi_v2.html": "0acba616f3fe90f244c37ab300c6d25ea9f049a10a15473c6ea68270f135fbb3",
+    "research/sci_route_20261026/phase5_sources/huang_v3.html": "3f01d3aecf426601a39273a886e0f5f7a194087077a509ab874b8f2826a48fc7",
+    "research/sci_route_20261026/phase5_sources/retrieval.json": "de060366866a083be5bfaf734710ff75cef308f581605ad750ff5bb0d7e8b7d1",
+    "research/sci_route_20261026/phase5_sources/retrieval_curl.json": "560b74bf3b6aa02fa0e1267168af1200394c1919716da0edf93f5cdca4591bf1",
+    "research/sci_route_20261026/phase5_sources/vidal_v2.pdf": "2ca9960857b61c588c27e6c1f317b054306e374974295da4f5d1bf5590482e6b"
+  },
+  "protected_after": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5",
+    "research/sci_route_20261026/exact_check.py": "d27a8ca637ec3cb2658002df3875ea587c155dc6189665f86e0979a255379166",
+    "research/sci_route_20261026/exact_results.json": "19a0306a38c31db3f28e59a6d4c0fabd5d4e0125b2d39d26ff904798d1a0e7cc",
+    "research/sci_route_20261026/frozen_plan.json": "b0eb19843aed01c632781ff487151c1eaeb4d6ebaa23c6d11578c9b1f800b597",
+    "research/sci_route_20261026/phase1_frozen.json": "4f2104deb217541b8dfeb772dfcc900fbc38fa923ae6b5f22c44077a10338547",
+    "research/sci_route_20261026/phase1_exact.py": "97864741dfc79386da0e63c7a144a3594c50df7524fc2bce1d970ca00ab63aab",
+    "research/sci_route_20261026/phase1_results.json": "618f75300118855c7ffa5d28ed837824ab7f017f41efcc9361125cb897423c51",
+    "research/sci_route_20261026/phase1_cut_dependence_results.json": "1620b12aee87addb007a0d0b3d25ebcace8288f8c34d4ee8af950c6f02f55664",
+    "research/sci_route_20261026/phase2_exact.py": "91ce1eba20bf8984d5db8ed8df87a4d8e81b5bfe502f9d21411c4c62ec8a88b7",
+    "research/sci_route_20261026/phase2_results.json": "917edc622b8cbaecd58938963d45519a9d288202ea5f9f30a25237caf7b6a4a8",
+    "research/sci_route_20261026/phase2_frozen.json": "bfbf6dbc012c2557856d34b4fb490a715183765e063625b9512705133ad8eeaf",
+    "research/sci_route_20261026/phase2_counterexample.py": "28d628be57ef6bdc2b0816a01f3f262ab91369ad0aa901836a36e34f2759d375",
+    "research/sci_route_20261026/phase2_counterexample_frozen.json": "80ca0b3f716ac5ed317606b89a2a47b1ef6de191ef98dd5bd72efb65af63129c",
+    "research/sci_route_20261026/phase2_counterexample_results.json": "0a36e283c0d632a790793093fbd882c4875410010d20c6fb78ad62d24e3f8e57",
+    "research/sci_route_20261026/phase3_frozen.json": "89b37ce9652d19eb573ba594a4c4ace33c673af585f8025648d5de27bd65f5ec",
+    "research/sci_route_20261026/phase3_graphs.py": "6409328705d3950825c24451b0c0e6536204753f381bb2565c8e1dfbf16d59f7",
+    "research/sci_route_20261026/phase3_graph_results.json": "cac6bf53fb40d523f1d5e73b1a0040840136187b4abf7f935790bfacb1617282",
+    "research/sci_route_20261026/phase3_physical.py": "cae3ca1b8d70a522610c6c1deb2c065b87c8097c4667775fdc7a58b5301a41e4",
+    "research/sci_route_20261026/phase3_physical_frozen.json": "9e2339e3f29935bec3239c29c6019ef5bde3df6ec1ba898dfb5f3542409d1c01",
+    "research/sci_route_20261026/phase3_physical_results.json": "bb40b756a1181ae04688b496263e329c80b0ca94e5eff03023ecd751b798c31f",
+    "research/sci_route_20261026/phase3_quotient_audit.py": "6b497ab7d6af4a137abfac0d38ba33798c481d6853f08c16d1275473eea6db54",
+    "research/sci_route_20261026/phase3_quotient_audit_results.json": "a10be77babe6ea5e0ecd28104aaedc010c4dd1b1d671e1d93b7676b0423649f1",
+    "research/sci_route_20261026/phase4_frozen.json": "cdd02f5edff3fdcb82cb24ac4311ed801fb3ac1f9fe57ef66c7de9eccc27e1db",
+    "research/sci_route_20261026/phase4_validation_frozen.json": "a815a680d011cef92083dcadda73c1e166d700fe0e35956e50b96510afd1c11f",
+    "src/reference.py": "c8110eb5bf08f5c31f5638a5c96974576524889c0a197e1a5e4a32eb6e652ddc",
+    "research/sci_route_20261026/master_round3.md": "99305baea9afaf41f9a37848d7ab63432b766b425a7a4805997d680b219aa338",
+    "research/sci_route_20261026/progress_round3.json": "7f4f2e19e9ebb1cfd0993ae2e86eb9196cc473e3f985bddcfd397b9dfd53e33e",
+    "research/sci_route_20261026/automation_state_round3.json": "16eeca98584e7a21aed723160550a4abdb1e9e500a728189d5ea601d97033510",
+    "research/sci_route_20261026/phase4_validation.py": "44b74817a6f8d4b200b8f3005edb77172ebc9d16fbc7da61a41802835405b168",
+    "research/sci_route_20261026/phase4_validation_results.json": "2d19d348fa87a514f83b9d2fd583b49bee5707a5a10e489d803a19c4d3c42a51",
+    "research/sci_route_20261026/phase4_validation_run.log": "7656c1a1f4264588eda183f8073b356339be35363260649e89c213b13816293b",
+    "SCI_RESCUE_MASTER.md": "ca35c4e883c589e5b431631e352be9fa662d15b31145960af0912ed2aa25916f",
+    "research/sci_route_20261026/progress.json": "f57144e51917ac796b38142857082b98c02586d348a47e5fa638b76ce13e51a2",
+    "research/sci_route_20261026/automation_state.json": "e9461a94a57a60395a70615cb4dcc523a833c7f6a2931e4de46ecb693402a1f4",
+    "research/sci_route_20261026/master_round4.md": "3a60d83b8c2c84572647558efd8f9e792e56dbb91d2b0b3a69885d414c964473",
+    "research/sci_route_20261026/progress_round4.json": "0f814e2c1aa31a8f51f348cdd11f322de98d58c67e7f558e6f29dfd14f660f4b",
+    "research/sci_route_20261026/automation_state_round4.json": "a41e3eb84c4f06f3ca5bf683baf7d982480976fe96c5f4f98fe880557a486b87",
+    "research/sci_route_20261026/phase5_frozen.json": "953e891a34d2e564c33f4b188d3baa22cd5c42a360107ac1f19b2d1d082cea4d",
+    "research/sci_route_20261026/phase5_index_scope_frozen.json": "0c8622c33e509562171ffbd2c909cafb1403fc161caf72e65fa1edda8b8d351a",
+    "research/sci_route_20261026/phase5_arithmetic.py": "79d8fd423880c2d06f809fbd8327499f49b57390bbc55b447fa28340a0398113",
+    "research/sci_route_20261026/phase5_arithmetic_results.json": "2beda2f279cb89dda8a48f93ddf87f89ca184637e3d64b94a3082eb21a86b928",
+    "research/sci_route_20261026/phase5_sources/bravyi_vyalyi_v2.html": "0acba616f3fe90f244c37ab300c6d25ea9f049a10a15473c6ea68270f135fbb3",
+    "research/sci_route_20261026/phase5_sources/huang_v3.html": "3f01d3aecf426601a39273a886e0f5f7a194087077a509ab874b8f2826a48fc7",
+    "research/sci_route_20261026/phase5_sources/retrieval.json": "de060366866a083be5bfaf734710ff75cef308f581605ad750ff5bb0d7e8b7d1",
+    "research/sci_route_20261026/phase5_sources/retrieval_curl.json": "560b74bf3b6aa02fa0e1267168af1200394c1919716da0edf93f5cdca4591bf1",
+    "research/sci_route_20261026/phase5_sources/vidal_v2.pdf": "2ca9960857b61c588c27e6c1f317b054306e374974295da4f5d1bf5590482e6b"
+  },
+  "new_production": 0,
+  "QPU": 0,
+  "quantum_fixture_system_L": 6,
+  "reference_qubits": 6,
+  "statistical_samples": 0
+}

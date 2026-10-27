@@ -1,0 +1,322 @@
+{
+  "config": {
+    "date": "2026-10-26",
+    "task": "Exact falsification of static-noiseless-sector saturation; frozen original three-body measurement endpoint",
+    "quantum_initial_state": "I/2^L, selective ideal Pauli measurements, all Born outcomes retained",
+    "scope": "c=1 only, no inference about c=0.6 criticality",
+    "methods": [
+      "full unsigned-subspace reachability enumeration",
+      "exact rational Markov expectations",
+      "independent Stim Bell-reference check"
+    ],
+    "maximum_L": 14,
+    "maximum_reachable_subspaces_per_case": 20000,
+    "Monte_Carlo_samples": 0,
+    "hardware_access": false,
+    "predictions_s_a_k_min_entropy": {
+      "L7_all_A_guards": [
+        6,
+        1,
+        2,
+        2
+      ],
+      "L7_one_free_guard_changed": [
+        7,
+        2,
+        2,
+        3
+      ],
+      "L14_two_triangles": [
+        13,
+        2,
+        3,
+        4
+      ],
+      "L7_commuting_control": [
+        7,
+        0,
+        0,
+        0
+      ]
+    },
+    "analytic_candidate": "For N disjoint guarded anticommutation triangles, S_mix(t)-k_static >= N-r >= N-2 for every outcome/history; iid frozen labels give N~Binomial(floor(L/7),p), p=2 sum_A pi_A^13 product_{B!=A}pi_B",
+    "falsification_rule": "Any counterexample to the bound, wrong rank, unreachable witness, or Stim disagreement stops its use; preserve failure and revise explicitly",
+    "stopping_rule": "No production trajectories, parameter scan, additional sizes, real QPU access or manuscript; novelty unverified even when exact checks pass"
+  },
+  "protected_before": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5"
+  },
+  "cases": [
+    {
+      "name": "single_triangle_global_relation",
+      "L": 7,
+      "labels": [
+        "XXX",
+        "XXX",
+        "XXX",
+        "XZX",
+        "YXX",
+        "XXX",
+        "XXX"
+      ],
+      "s": 6,
+      "a": 1,
+      "kernel": 1,
+      "k_static": 2,
+      "reachable_subspaces": 64,
+      "minimum_entropy": 2,
+      "gap": 0,
+      "witness": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ]
+    },
+    {
+      "name": "single_triangle_broken_relation",
+      "L": 7,
+      "labels": [
+        "ZXX",
+        "XXX",
+        "XXX",
+        "XZX",
+        "YXX",
+        "XXX",
+        "XXX"
+      ],
+      "s": 7,
+      "a": 2,
+      "kernel": 0,
+      "k_static": 2,
+      "reachable_subspaces": 48,
+      "minimum_entropy": 3,
+      "gap": 1,
+      "witness": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "stim": {
+        "branch_inputs": 16,
+        "checked_events": 64,
+        "final_entropies": [
+          3
+        ]
+      },
+      "center_access_control": {
+        "minimum_entropy": 2,
+        "reachable_subspaces": 96,
+        "note": "Diagnostic extra weight-2 measurement, outside original model"
+      },
+      "exact_uniform_anchor_mean_entropy": [
+        [
+          0,
+          "7"
+        ],
+        [
+          1,
+          "6"
+        ],
+        [
+          2,
+          "262/49"
+        ],
+        [
+          3,
+          "1682/343"
+        ],
+        [
+          4,
+          "11020/2401"
+        ],
+        [
+          5,
+          "73228/16807"
+        ],
+        [
+          6,
+          "491418/117649"
+        ],
+        [
+          7,
+          "474422/117649"
+        ],
+        [
+          8,
+          "22557972/5764801"
+        ],
+        [
+          9,
+          "153826332/40353607"
+        ],
+        [
+          10,
+          "1052208082/282475249"
+        ],
+        [
+          11,
+          "7215594842/1977326743"
+        ],
+        [
+          12,
+          "49587450700/13841287201"
+        ],
+        [
+          13,
+          "48772657204/13841287201"
+        ],
+        [
+          14,
+          "2354412024618/678223072849"
+        ],
+        [
+          15,
+          "16259861587034/4747561509943"
+        ],
+        [
+          16,
+          "112437576706212/33232930569601"
+        ]
+      ]
+    },
+    {
+      "name": "two_isolated_triangles",
+      "L": 14,
+      "labels": [
+        "XXX",
+        "XXX",
+        "XXX",
+        "XZX",
+        "YXX",
+        "XXX",
+        "XXX",
+        "XXX",
+        "XXX",
+        "XXX",
+        "XZX",
+        "YXX",
+        "XXX",
+        "XXX"
+      ],
+      "s": 13,
+      "a": 2,
+      "kernel": 1,
+      "k_static": 3,
+      "reachable_subspaces": 4096,
+      "minimum_entropy": 4,
+      "gap": 1,
+      "witness": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        13
+      ]
+    },
+    {
+      "name": "commuting_negative_control",
+      "L": 7,
+      "labels": [
+        "XXX",
+        "XXX",
+        "XXX",
+        "XXX",
+        "XXX",
+        "XXX",
+        "XXX"
+      ],
+      "s": 7,
+      "a": 0,
+      "kernel": 0,
+      "k_static": 0,
+      "reachable_subspaces": 128,
+      "minimum_entropy": 0,
+      "gap": 0,
+      "witness": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "versions": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "stim": "1.16.0"
+  },
+  "random_samples": 0,
+  "qpu_jobs": 0,
+  "relabelings": [
+    {
+      "ABC": "XYZ",
+      "minimum_entropy": 3
+    },
+    {
+      "ABC": "XZY",
+      "minimum_entropy": 3
+    },
+    {
+      "ABC": "YXZ",
+      "minimum_entropy": 3
+    },
+    {
+      "ABC": "YZX",
+      "minimum_entropy": 3
+    },
+    {
+      "ABC": "ZXY",
+      "minimum_entropy": 3
+    },
+    {
+      "ABC": "ZYX",
+      "minimum_entropy": 3
+    }
+  ],
+  "guard_constraint_cases": 729,
+  "motif_probability": {
+    "13/100": {
+      "exact": "84302231477559259044440157/125000000000000000000000000000",
+      "probability": 0.000674417851820474,
+      "asymptotic_gap_density_lower_bound": 9.634540740292487e-05
+    },
+    "1/3": {
+      "exact": "2/4782969",
+      "probability": 4.1815031625753794e-07,
+      "asymptotic_gap_density_lower_bound": 5.973575946536256e-08
+    }
+  },
+  "protected_after": {
+    "CRITICALITY_IBM_MASTER.md": "0489e491f82e8f40574bbcd77e1d0d84f1b42e4b40b8e11779bba477ee70207d",
+    "RESEARCH_DIRECTION_REVIEW.md": "fb13a11578f683f0509cd1b8429d76186fa9f535a78bd595c096a5b2b94d393a",
+    "GATE_H_REPORT.md": "548107173c727079801f3eea3342d224c5a5bf2fb070e50dc18bed7d3ca9f417",
+    "src/stabilizer.py": "92a0dc82c94d6cf86a903a4a7e856464c5e11afeb26f1091c217591952cde251",
+    "src/baseline_validation.py": "957b601163030628a9d3a64dffb8687104f863c94d685860347bc3ba4d18cd65",
+    "src/audit_validation.py": "2059b75ca95e515a7bac81180e164f4476be4447c6e344298628ee0f600949ec",
+    "src/ensemble.py": "10aec7fad209e5f02dce8a7529e1252ead345fae3593042b4f82afc4c59e8472",
+    "results/criticality_followup_20261026/config.json": "f6e8edf1129620f86f1da5df76488a44d393aadbcd3064c60b3bf650039a59b3",
+    "results/criticality_followup_20261026/final_decision.json": "f7caaae57bd2c7a175b1f234deb718bc997494139bf25e9d1d380d514402b1d5"
+  },
+  "elapsed_seconds": 2.1911964589962736,
+  "status": "PASS"
+}

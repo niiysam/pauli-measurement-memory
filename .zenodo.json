@@ -1,0 +1,19 @@
+{
+  "title": "Code and data for Entanglement barriers and purification in frozen and slowly refreshed Pauli measurement circuits",
+  "upload_type": "dataset",
+  "creators": [
+    {
+      "name": "Zhou, Hancheng",
+      "affiliation": "Polessky State University; Guangdong University of Education"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "cc-by-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/niiysam/pauli-measurement-memory",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

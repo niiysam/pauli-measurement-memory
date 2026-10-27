@@ -1,0 +1,89 @@
+{
+  "sizes": [
+    24,
+    48,
+    96
+  ],
+  "qs": [
+    0.11,
+    0.13,
+    0.15
+  ],
+  "bracket_sizes": [
+    48,
+    96
+  ],
+  "cs": [
+    0.0,
+    0.6
+  ],
+  "T": 8192,
+  "n_q13": 128,
+  "n_brackets": 32,
+  "master": 2026102612,
+  "workers": 6,
+  "time_limit_seconds": 28800,
+  "reuse": "All first-batch L48,q=.13 records, 128 pairs, without reclassifying as new independent samples",
+  "boundary": "periodic",
+  "r": 3,
+  "initials": [
+    "zero",
+    "plus"
+  ],
+  "physical_time": "global events/L; primary",
+  "activity_clock": "mixed kind!=0 during last-logical stage; auxiliary only",
+  "windows": {
+    "old": [
+      3072,
+      4096
+    ],
+    "previous": [
+      5120,
+      6144
+    ],
+    "penultimate": [
+      6144,
+      7168
+    ],
+    "late": [
+      7168,
+      8192
+    ],
+    "half_early": [
+      7168,
+      7680
+    ],
+    "half_late": [
+      7680,
+      8192
+    ]
+  },
+  "primary": "G=ln(m_tau(96,.13,.6)/m_tau(48,.13,.6))-ln(m_tau(96,.13,0)/m_tau(48,.13,0))",
+  "primary_alpha": 0.05,
+  "primary_censor_rule": "If any q=.13 L48/96 history has not purified, primary complete-event bootstrap is INCONCLUSIVE; retain all records and censor bounds, never filter complete cases.",
+  "median": "inverse empirical CDF, no interpolation",
+  "bootstrap": 10000,
+  "bootstrap_seed": 2026102614,
+  "parent_unit": "independent (master,L,q,rep); pair c within same L/q, resample L/q independently",
+  "primary_splits": "rep0-63 and rep64-127 at q=.13 are prespecified consistency diagnostics, not independent of the pooled primary",
+  "convergence_primary": "q=.13 L24/96, 4 new cells: late-minus-penultimate S, Bonferroni alpha=.05/4; L48 uses prior frozen checks",
+  "tolerance_bits": 0.15,
+  "convergence_auxiliary_alpha": 0.05,
+  "support_family": "8 S finite-grid contrasts: q=.13 x 2c x (log, affine-volume) plus q=.11/.15 x 2c x (96-minus-48), Bonferroni alpha=.05/8; diagnostics, not asymptotic laws",
+  "fit_policy": "No critical exponent fit or critical point estimate from a single crossing; no unique asymptotic-law selection with arbitrary corrections on three L.",
+  "stop": "Exactly this grid and sample count, no replacement/extension based on significance. Final positive/negative/undetermined decision then close automation. No QPU or manuscript.",
+  "environment": {
+    "python": "3.14.6 (v3.14.6:c63aec69bd5, Jun 10 2026, 08:07:54) [Clang 21.0.0 (clang-2100.1.1.101)]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "stim": "1.16.0",
+    "platform": "macOS-26.5.2-arm64-arm-64bit-Mach-O"
+  },
+  "code_hashes": {
+    "src/criticality96.py": "e71d66dd63de158a62bdc942cbaf8c033630bcdd9d25f41b2e8d14f81ea0347f",
+    "tests/test_criticality96.py": "1db8f632504c949d0b478502ae79403c7a235fea13b941199932884f0719d47b",
+    "scripts/criticality_followup.py": "ac83b2da1b1c7e0effd419a8f0e80f61fc54d4408acf6302ee32b65417b755a9",
+    "scripts/analyze_criticality_followup.py": "9a1127bbb887a3c42a4bb963108b58c2fac1d52f958f20d910762e344b592b11",
+    "results/criticality_ibm_20261026/config.json": "5c19926add49342985ac2962a2ce42b493d3cdecb2d0c9af19e3ed2068aad7f0"
+  }
+}
